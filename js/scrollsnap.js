@@ -61,8 +61,9 @@
 
                     $scrollingEl.find(settings.snaps).each(function() {
                         var snappingEl = this,
-                            dy = snappingEl[offsetLT] - ($(snappingEl).width() * dp);
-                        if (dy <= scrollingEl[scrollLT]) {
+                            dy = snappingEl[offsetLT] - ($(snappingEl).width() * dp) + (dp === 0 ? -1 : 1);
+
+                        if (parseInt(dy) <= parseInt(scrollingEl[scrollLT])) {
                             matchingEl = snappingEl;
                         }
                     });
