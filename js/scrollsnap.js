@@ -52,6 +52,38 @@
             var scrollingEl = this,
                 $scrollingEl = $(scrollingEl);
 
+            function snap(matchingEl) {
+                var endScroll = matchingEl[offsetLT] + settings.offset,
+                    animateProp = {};
+                animateProp[scrollLT] = endScroll;
+                if ($scrollingEl[scrollLT]() !== endScroll) {
+                    $scrollingEl.animate(animateProp, settings.duration, settings.easing, debounce(function () {
+                        var $matchingEl = $(matchingEl);
+
+                        if (settings.onSnap) {
+                            settings.onSnap($matchingEl);
+                        }
+
+                        $matchingEl.trigger(settings.onSnapEvent);
+
+                    }, settings.onSnapWait));
+                }
+            }
+
+            $scrollingEl.find(settings.snaps).click(function(e) {
+                var x = e.pageX - $(this).position().left;
+                var xp = e.pageX / $(this).width();
+                var matchingEl = null;
+                if (xp < 0.3) {
+                    matchingEl = $(this).prev();
+                } else if (xp > 0.7) {
+                    matchingEl = $(this).next();
+                }
+                if (matchingEl.length) {
+                    snap(matchingEl[0]);
+                }
+            });
+
             if (scrollingEl[scrollLT] !== undefined) {
                 $scrollingEl.css('position', 'relative');
 
@@ -69,23 +101,8 @@
                     });
 
                     if (matchingEl) {
-                        var endScroll = matchingEl[offsetLT] + settings.offset,
-                            animateProp = {};
-                        animateProp[scrollLT] = endScroll;
-                        if ($scrollingEl[scrollLT]() !== endScroll) {
-                            $scrollingEl.animate(animateProp, settings.duration, settings.easing, debounce(function () {
-                                var $matchingEl = $(matchingEl);
-
-                                if (settings.onSnap) {
-                                    settings.onSnap($matchingEl);
-                                }
-
-                                $matchingEl.trigger(settings.onSnapEvent);
-
-                            }, settings.onSnapWait));
-                        }
+                        snap(matchingEl);
                     }
-
                 };
 
                 $scrollingEl.bind('scrollstop', {latency: settings.latency}, handler);
