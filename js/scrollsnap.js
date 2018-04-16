@@ -46,7 +46,8 @@
         var leftOrTop = settings.direction === 'x' ? 'Left' : 'Top',
             offsetLT = 'offset' + leftOrTop,
             scrollLT = 'scroll' + leftOrTop,
-            lastPos = 0;
+            lastPos = 0,
+            lastMatchingEl = null;
 
         return this.each(function() {
             var scrollingEl = this,
@@ -68,6 +69,7 @@
 
                     }, settings.onSnapWait));
                 }
+                lastMatchingEl = matchingEl;
             }
 
             $scrollingEl.find(settings.snaps).click(function(e) {
@@ -79,7 +81,7 @@
                 } else if (xp > 0.7) {
                     matchingEl = $(this).next();
                 }
-                if (matchingEl.length) {
+                if (matchingEl && matchingEl.length) {
                     snap(matchingEl[0]);
                 }
             });
@@ -108,6 +110,15 @@
                 $scrollingEl.bind('scrollstop', {latency: settings.latency}, handler);
                 $scrollingEl.bind('scrollstart', {latency: settings.latency}, function() {
                     lastPos = $scrollingEl[scrollLT]();
+                });
+                $(window).resize(function() {
+                    $(window).resize(function() {
+                        waitForFinalEvent(function(){
+                            if(lastMatchingEl) {
+                                snap(lastMatchingEl);
+                            }
+                        }, 250, "scrollsnap");
+                    });
                 });
             }
         });

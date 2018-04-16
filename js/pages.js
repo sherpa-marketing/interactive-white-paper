@@ -52,7 +52,11 @@ function Pages(container) {
 
     this.resize();
     this.redraw();
-    $(window).resize(this.resize);
+    $(window).resize(function() {
+        waitForFinalEvent(function(){
+            that.resize();
+        }, 200, "pages");
+    });
 }
 
 
