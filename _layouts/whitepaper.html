@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% assign uid = page.name | replace: '.html', '' %}
+    {% assign filter = uid | prepend: '/' | append: '/' %}
+    {% assign pages = site.whitepaper-pages | where_exp: "wp", "wp.relative_path contains filter" | sort: 'page' %}
+    <link rel="stylesheet" href="lib/materialize/dist/css/materialize.css"/>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/{{uid}}.css"/>
+</head>
+<body>
+
+<div id="flipbook" class="pages" tabindex="0">
+    {% for wp in pages %}
+    <section tabindex="1">
+        {{wp.content}}
+    </section>
+    {% endfor %}
+</div>
+
+<script src="lib/modernizer/modernizr.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/dist/jquery.easing.min.js"></script>
+<script src="lib/dist/jquery.scrollstop.js"></script>
+<script src="js/scrollsnap.js"></script>
+<script src="lib/materialize/dist/js/materialize.js"></script>
+<script src="js/pages.js"></script>
+<script>
+    $("#flipbook").focus();
+</script>
+
+</body>
+</html>

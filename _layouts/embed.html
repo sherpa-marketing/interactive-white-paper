@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% assign uid = page.name | replace: '-embed.html', '' %}
+    <link rel="stylesheet" href="lib/materialize/dist/css/materialize.css"/>
+</head>
+<body style="height: 100%; width:100%">
+    <iframe style="height: 100%; width:100%; position: absolute;" src="{{uid}}.html"></iframe>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Site settings
+title: Intractive White Papers
+email: marc@9ls.com
+description: Expressly Competitions
+baseurl: ""
+url: "https://whitepapers.9ls.com"
+
+# Build settings
+markdown: kramdown
+
+sass:
+    sass_dir: /_scss
+
+collections:
+  whitepaper-pages:
+    output: false
+

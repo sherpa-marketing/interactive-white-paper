@@ -1,0 +1,21 @@
+body {
+  background: #ccc;
+  padding: 3rem;
+}
+
+.pages {
+  background: white;
+
+  &:focus {
+    outline: none;
+  }
+
+  > section {
+    background: white;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
