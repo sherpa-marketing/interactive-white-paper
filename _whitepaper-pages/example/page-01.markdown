@@ -9,6 +9,6 @@ title: Page 1
         <h2>Enterprise Management</h2>
         <p class="mt-5">Value Proposition Messaging Guide 2018</p>
     </div>
-    <div class="col-lg-7 hero" data-animation="zoomIn">
+    <div class="col-lg-7 hero">
     </div>
 </div>
