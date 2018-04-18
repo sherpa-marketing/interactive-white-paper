@@ -29,7 +29,7 @@ function Pages(container) {
     this.resize = function() {
         var height = that.findMaxPageHeight() + 17;
         var width = that.container.width();
-        that.wrapper.css({height: (height + 1) + "px"});
+        that.wrapper.css({height: height + "px"});
         for (var i = 0; i < that.pages.length; ++i) {
             $(that.pages[i]).css({width: width, height: height + "px"});
         }
@@ -39,6 +39,8 @@ function Pages(container) {
         for (var i = 0; i < that.pages.length; ++i) {
             $(that.pages[i]).css({
                 "display": "inline-block",
+                "overflow-x": "hidden",
+                "white-space": "normal",
                 "vertical-align": "top"
             });
         }

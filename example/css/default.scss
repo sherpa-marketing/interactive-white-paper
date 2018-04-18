@@ -1,0 +1,34 @@
+---
+---
+
+@import "whitepaper";
+
+* {
+  color: white;
+}
+
+.pages {
+  > section {
+    background: #243641;
+    min-height: 90vh;
+
+    > .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.page-page-01 {
+  .hero {
+    background-image: url(../img/bg-lady.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 50%;
+
+    @media (min-width: 992px) {
+      height: auto;
+    }
+  }
+}

@@ -9,4 +9,5 @@ var waitForFinalEvent = (function () {
         }
         timers[uniqueId] = setTimeout(callback, ms);
     };
+
 })();

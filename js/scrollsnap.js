@@ -110,6 +110,7 @@
                 $scrollingEl.bind('scrollstop', {latency: settings.latency}, handler);
                 $scrollingEl.bind('scrollstart', {latency: settings.latency}, function() {
                     lastPos = $scrollingEl[scrollLT]();
+                    
                 });
                 $(window).resize(function() {
                     $(window).resize(function() {

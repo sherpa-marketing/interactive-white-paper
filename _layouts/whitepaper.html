@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--{% assign uid = page.name | replace: '.html', '' %}-->
+    {% assign filter = page.pages | prepend: '/' | append: '/' %}
+    {% assign pages = site.whitepaper-pages | where_exp: "wp", "wp.relative_path contains filter" | sort: 'page' %}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% assign uid = page.name | replace: '.html', '' %}
-    {% assign filter = uid | prepend: '/' | append: '/' %}
-    {% assign pages = site.whitepaper-pages | where_exp: "wp", "wp.relative_path contains filter" | sort: 'page' %}
-    <link rel="stylesheet" href="lib/materialize/dist/css/materialize.css"/>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-          crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/{{uid}}.css?cb=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/default.css?cb=1"/>
 </head>
 <body>
 
-<div id="flipbook" class="pages" tabindex="0">
-    {% for wp in pages %}
-    <section tabindex="1">
-        {{wp.content}}
-    </section>
-    {% endfor %}
+<div class="container my-3 p-0 z-depth-2">
+    <div id="flipbook" class="pages" tabindex="0">
+        {% for wp in pages %}
+            {% assign wp_tokens = wp.path | split: '/' | reverse %}
+            {% assign wp_name = wp_tokens[0] | replace: '.markdown', ''  %}
+            <section tabindex="1" class="page-{{wp_name}}">
+                {{wp.content}}
+            </section>
+        {% endfor %}
+    </div>
 </div>
 
-<script src="lib/modernizer/modernizr.js"></script>
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/dist/jquery.easing.min.js"></script>
-<script src="lib/dist/jquery.scrollstop.js"></script>
-<script src="js/resize.js"></script>
-<script src="js/scrollsnap.js"></script>
-<script src="js/pages.js"></script>
-<script src="lib/materialize/dist/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"
+        integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"
+        integrity="sha256-9Nt2r+tJnSd2A2CRUvnjgsD+ES1ExvjbjBNqidm9doI=" crossorigin="anonymous"></script>
+
+<script src="../lib/jquery.scrollstop.js"></script>
+<script src="../js/resize.min.js"></script>
+<script src="../js/scrollsnap.min.js"></script>
+<script src="../js/pages.min.js"></script>
+
 <script>
     $("#flipbook").focus();
 </script>
