@@ -49,8 +49,23 @@ function Pages(container) {
     this.container.scrollsnap({
         snaps: 'section',
         direction: "x",
-        easing : 'easeInCubic'
+        easing : 'easeInCubic',
+        onSnap: function($matchingEl) {
+            that.container.find("[data-animation]").each(function () {
+                $(this).removeClass("animated");
+                $(this).removeClass($(this).data("animation"));
+            });
+
+            $matchingEl.find("[data-animation]").each(function () {
+                $(this).addClass("animated " + $(this).data("animation"));
+            });
+        }
     });
+
+    that.container.find("section:first-of-type [data-animation]").each(function () {
+        $(this).addClass("animated " + $(this).data("animation"));
+    });
+
 
     this.resize();
     this.redraw();
