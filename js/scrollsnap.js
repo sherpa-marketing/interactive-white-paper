@@ -86,6 +86,23 @@
                 }
             });
 
+            $scrollingEl.find(settings.snaps).each(function(e) {
+                var $this = $(this);
+                $this.find('.scrollsnap-next').click(function(e) {
+                    matchingEl = $this.next();
+                    if (matchingEl && matchingEl.length) {
+                        snap(matchingEl[0]);
+                    }
+                });
+
+                $this.find('.scrollsnap-prev').click(function(e) {
+                    matchingEl = $this.prev();
+                    if (matchingEl && matchingEl.length) {
+                        snap(matchingEl[0]);
+                    }
+                });
+            });
+
             if (scrollingEl[scrollLT] !== undefined) {
                 $scrollingEl.css('position', 'relative');
 
@@ -110,7 +127,7 @@
                 $scrollingEl.bind('scrollstop', {latency: settings.latency}, handler);
                 $scrollingEl.bind('scrollstart', {latency: settings.latency}, function() {
                     lastPos = $scrollingEl[scrollLT]();
-                    
+
                 });
                 $(window).resize(function() {
                     $(window).resize(function() {
