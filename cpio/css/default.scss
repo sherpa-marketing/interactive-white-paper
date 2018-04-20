@@ -1,0 +1,158 @@
+---
+---
+@import "whitepaper";
+
+@font-face {
+  font-family: AdelleSAGE;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/adellesage-webfont.f0ed893a.woff2) format("woff2"),url(../fonts/adellesage-webfont.f130da59.woff) format("woff"),url(../fonts/adellesage-webfont.ed04ff62.eot) format("embedded-opentype"),url(../fonts/adellesage-webfont.3b8f19d0.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/adellesanssage-webfont.5cb16a40.woff2) format("woff2"),url(../fonts/adellesanssage-webfont.b52cc537.woff) format("woff"),url(../fonts/adellesanssage-webfont.f226409f.eot) format("embedded-opentype"),url(../fonts/adellesanssage-webfont.a58f9930.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/adellesanssage-italic-webfont.e9db4696.woff2) format("woff2"),url(../fonts/adellesanssage-italic-webfont.3a5dd348.woff) format("woff"),url(../fonts/adellesanssage-italic-webfont.c5c0002c.eot) format("embedded-opentype"),url(../fonts/adellesanssage-italic-webfont.54639e06.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/adellesanssage-bold-webfont.7a82a0b8.woff2) format("woff2"),url(../fonts/adellesanssage-bold-webfont.550f18b1.woff) format("woff"),url(../fonts/adellesanssage-bold-webfont.71bf43f0.eot) format("embedded-opentype"),url(../fonts/adellesanssage-bold-webfont.49740eb0.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/adellesanssage-bolditalic-webfont.7ff304c0.woff2) format("woff2"),url(../fonts/adellesanssage-bolditalic-webfont.49c449d0.woff) format("woff"),url(../fonts/adellesanssage-bolditalic-webfont.cdf49435.eot) format("embedded-opentype"),url(../fonts/adellesanssage-bolditalic-webfont.eeb5d18e.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 100;
+  font-style: normal;
+  src: url(../fonts/adellesanssageth-webfont.388276be.woff2) format("woff2"),url(../fonts/adellesanssageth-webfont.557adc21.woff) format("woff"),url(../fonts/adellesanssageth-webfont.87685fa3.eot) format("embedded-opentype"),url(../fonts/adellesanssageth-webfont.3aeaba65.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/adellesanssageth-italic-webfont.9f7d360f.woff2) format("woff2"),url(../fonts/adellesanssageth-italic-webfont.2c81e090.woff) format("woff"),url(../fonts/adellesanssageth-italic-webfont.3b0c29a0.eot) format("embedded-opentype"),url(../fonts/adellesanssageth-italic-webfont.089d3bbc.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/adellesanssagelt-webfont.88880ba3.woff2) format("woff2"),url(../fonts/adellesanssagelt-webfont.7e78b5ef.woff) format("woff"),url(../fonts/adellesanssagelt-webfont.aa2fda96.eot) format("embedded-opentype"),url(../fonts/adellesanssagelt-webfont.8435a36b.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: AdelleSansSAGE;
+  font-weight: 300;
+  font-style: italic;
+  src: url(../fonts/adellesanssagelt-italic-webfont.54e9a17d.woff2) format("woff2"),url(../fonts/adellesanssagelt-italic-webfont.586d6e41.woff) format("woff"),url(../fonts/adellesanssagelt-italic-webfont.1226ed3c.eot) format("embedded-opentype"),url(../fonts/adellesanssagelt-italic-webfont.b4574917.ttf) format("truetype")
+}
+
+$color-purple: #813687;
+
+.shadow {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.shadow-hover {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.no-user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pages {
+  xborder: 5px solid red;
+}
+
+.with-background {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-01.jpg) no-repeat !important;
+  color: white;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: AdelleSansSAGE,sans-serif;
+  //font-style: italic;
+  //-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
+  //-webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
+  //-o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
+  //-ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
+  //transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
+}
+
+h1 {
+  font-size: 2rem;
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: 4rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    font-size: 3rem;
+  }
+}
+
+a.button {
+  background: $color-purple;
+  color: $white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  outline: 0;
+  overflow: hidden;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+
+  @extend .no-user-select;
+  @extend .shadow;
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-purple, 10%);
+    @extend .shadow-hover;
+  }
+
+  &:active,
+  &:focus {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-purple, 10%);
+    @extend .shadow-hover;
+  }
+}
+
+.logos-container {
+  img {
+    height: 36px;
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+      height: 48px;
+    }
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+      height: 75px;
+    }
+  }
+}

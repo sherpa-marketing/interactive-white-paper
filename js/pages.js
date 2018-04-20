@@ -27,11 +27,17 @@ function Pages(container) {
     };
 
     this.resize = function() {
-        var height = that.findMaxPageHeight() + 17;
+        var height = that.container.hasClass("pages-full-screen") ? $( window ).height() : that.findMaxPageHeight();
+        that.wrapper.css({height: height + "px"});
+        for (var i = 0; i < that.pages.length; ++i) {
+            $(that.pages[i]).css({height: (height + 17) + "px"});
+        }
+
+        // We need to set height before width to avoid y scroll bar affecting the size
         var width = that.container.width();
         that.wrapper.css({height: height + "px"});
         for (var i = 0; i < that.pages.length; ++i) {
-            $(that.pages[i]).css({width: width, height: height + "px"});
+            $(that.pages[i]).css({width: width});
         }
     };
 
@@ -67,11 +73,11 @@ function Pages(container) {
     });
 
 
-    this.resize();
     this.redraw();
+    this.resize();
     $(window).resize(function() {
         waitForFinalEvent(function(){
-            that.resize();
+            setTimeout(that.resize, 250);
         }, 200, "pages");
     });
 }

@@ -1,0 +1,7 @@
+@each $delay in map-keys($delays) {
+  .delay-#{$delay} {
+    @each $index, $vendor in $vendors {
+      #{$vendor}animation-delay: $delay;
+    }
+  }
+}

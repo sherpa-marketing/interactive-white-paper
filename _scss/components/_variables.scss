@@ -1,0 +1,67 @@
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$text-muted:                  $gray-600 !default;
+
+$body-bg:                   $white !default;
+$body-color:                $gray-900 !default;
+
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3)
+), $spacers);
+
+$vendors: () !default;
+$vendors: map-merge((
+        0: '-moz-',
+        1: '-webkit-',
+        2: '-o-',
+        3: '-ms-',
+        4: '-',
+        5: ''
+), $vendors);
+
+$delays: (
+        1s: 1s,
+        2s: 2s,
+        3s: 3s,
+        4s: 4s,
+        5s: 5s,
+        100ms: 100ms,
+        200ms: 200ms,
+        300ms: 300ms,
+        400ms: 400ms,
+        500ms: 500ms,
+        600ms: 600ms,
+        700ms: 700ms,
+        800ms: 800ms,
+        900ms: 900ms
+) !default;

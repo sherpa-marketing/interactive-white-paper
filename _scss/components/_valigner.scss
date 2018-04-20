@@ -1,0 +1,16 @@
+.valigner {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .valigner-grow {
+    flex: 1;
+  }
+
+  > div {
+    width: 100%;
+  }
+}
+

@@ -1,3 +1,15 @@
+@import "components/text-truncate";
+@import "components/text-hide";
+@import "components/breakpoints";
+
+@import "components/variables";
+@import "components/spacing";
+@import "components/text";
+
+@import "components/animation-delay";
+@import "components/valigner";
+
+
 body {
   background: #ccc;
   //padding: 3rem;
@@ -12,7 +24,6 @@ body {
 
   > section {
     background: white;
-    font-size: 14px;
 
     &:focus {
       outline: none;
@@ -20,7 +31,16 @@ body {
   }
 }
 
+.animated-hidden-start {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible !important;
+}
+
 .z-depth-2 {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
   box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
+
