@@ -57,6 +57,9 @@ function Pages(container) {
         direction: "x",
         easing : 'easeInCubic',
         onSnap: function($matchingEl) {
+            $(".page-next").toggle($matchingEl.prev().length !== 0 && $matchingEl.next().length !== 0);
+            $(".page-prev").toggle($matchingEl.prev().length !== 0);
+
             that.container.find("[data-animation]").each(function () {
                 $(this).removeClass("animated");
                 $(this).removeClass($(this).data("animation"));
@@ -67,6 +70,10 @@ function Pages(container) {
             });
         }
     });
+
+    var first = $(that.container.find('section')[0]);
+    $(".page-next").toggle(first.prev().length  !== 0 && first.next().length !== 0);
+    $(".page-prev").toggle(first.prev().length !== 0);
 
     that.container.find("section:first-of-type [data-animation]").each(function () {
         $(this).addClass("animated " + $(this).data("animation"));
