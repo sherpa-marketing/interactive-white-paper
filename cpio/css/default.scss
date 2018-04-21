@@ -85,13 +85,29 @@ $color-purple: #813687;
 }
 
 .pages {
-  xborder: 5px solid red;
+  > section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
 }
 
 .with-background {
-  background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-01.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position-y: bottom !important;
+  background-position-x: left !important;
   color: white;
+  padding: 0 !important;
 }
 
 html,
@@ -100,7 +116,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: AdelleSansSAGE,sans-serif;
+  //font-family: AdelleSansSAGE,sans-serif;
   //font-style: italic;
   //-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
   //-webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, 0deg);
@@ -118,6 +134,18 @@ h1 {
     font-size: 3rem;
   }
 }
+
+h2 {
+  font-size: 1.5rem;
+  color: $color-purple;
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    font-size: 2rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: 2rem;
+  }
+}
+
 
 a.button {
   background: $color-purple;
@@ -155,4 +183,8 @@ a.button {
       height: 75px;
     }
   }
+}
+
+.callout {
+  background: $gray-300;
 }
