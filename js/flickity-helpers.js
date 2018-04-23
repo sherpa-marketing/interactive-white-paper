@@ -6,7 +6,6 @@ $(function() {
     });
 
     $carousel.on('ready.flickity', function( event, index ) {
-        console.log('Flickity ready');
         setTimeout(function() {
             var flick = $carousel.data('flickity');
             $(flick.selectedElement).find("[data-animation]").each(function () {
@@ -16,15 +15,12 @@ $(function() {
     });
 
     $carousel.on('settle.flickity', function( event, index ) {
-        console.log( 'Flickity settled at ' + index );
-
         var flick = $carousel.data('flickity');
-        $carousel.find("[data-animation]").each(function () {
-            $(this).removeClass("animated");
-            $(this).removeClass($(this).data("animation"));
-        });
+        // $carousel.find("[data-animation]").each(function () {
+        //     $(this).removeClass("animated");
+        //     $(this).removeClass($(this).data("animation"));
+        // });
 
-        console.log(flick.selectedElement);
         $(flick.selectedElement).find("[data-animation]").each(function () {
             $(this).addClass("animated " + $(this).data("animation"));
         });
