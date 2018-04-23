@@ -29,7 +29,6 @@ $(function() {
     $carousel.flickity({
         cellAlign: 'left',
         contain: true,
-        // fullscreen: true,
         pageDots: false
     });
 
