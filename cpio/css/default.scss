@@ -88,15 +88,18 @@ $color-purple: #813687;
   > section {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
-    @media (min-width: map-get($grid-breakpoints, "sm")) {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+    padding-bottom: 1.5rem;
 
     @media (min-width: map-get($grid-breakpoints, "md")) {
-      padding-left: 6rem;
-      padding-right: 6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-bottom: 4rem;
     }
   }
 }
@@ -171,6 +174,11 @@ a.button {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-purple, 10%);
     @extend .shadow-hover;
   }
+
+  &.small {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
 }
 
 .logos-container {
@@ -187,4 +195,122 @@ a.button {
 
 .callout {
   background: $gray-300;
+}
+
+.flip-card {
+  color: white;
+
+  .side {
+    height: 270px;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+}
+
+#flip-growth {
+  $color-green: #74c2ac;
+  .side {
+    background: $color-green;
+    .button {
+      background: $color-green;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-green, 10%);
+        @extend .shadow-hover;
+      }
+
+      &:active,
+      &:focus {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-green, 10%);
+        @extend .shadow-hover;
+      }
+    }
+  }
+
+  .side:first-child {
+    background-image: url(../img/growth.jpg);
+    background-size: cover;
+  }
+
+}
+
+#flip-digital {
+  $color-pink: #cd5998;
+  .side {
+    background: $color-pink;
+    .button {
+      background: $color-pink;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-pink, 10%);
+        @extend .shadow-hover;
+      }
+
+      &:active,
+      &:focus {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-pink, 10%);
+        @extend .shadow-hover;
+      }
+    }
+  }
+
+  .side:first-child {
+    background-image: url(../img/digital.jpg);
+    background-size: cover;
+  }
+
+}
+
+#flip-flexibility {
+  $color-blue: #42aed3;
+  .side {
+    background: $color-blue;
+    .button {
+      background: $color-blue;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-blue, 10%);
+        @extend .shadow-hover;
+      }
+
+      &:active,
+      &:focus {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-blue, 10%);
+        @extend .shadow-hover;
+      }
+    }
+  }
+
+  .side:first-child {
+    background-image: url(../img/flexiblity.jpg);
+    background-size: cover;
+  }
+
+}
+
+#flip-productivity {
+  .side {
+    background: $color-purple;
+    .button {
+      background: $color-purple;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-purple, 10%);
+        @extend .shadow-hover;
+      }
+
+      &:active,
+      &:focus {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color-purple, 10%);
+        @extend .shadow-hover;
+      }
+    }
+  }
+
+  .side:first-child {
+    background-image: url(../img/productivity.jpg);
+    background-size: cover;
+  }
 }

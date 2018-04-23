@@ -64,4 +64,21 @@ body {
   pointer-events: none;
 }
 
+.flip-card {
+  width: 100%;
 
+  .sides {
+    width: 100%;
+  }
+
+  .side {
+    min-height: 250px;
+    background: yellow;
+    padding: 1.5rem;
+
+    .undo {
+      float: right;
+    }
+  }
+
+}
