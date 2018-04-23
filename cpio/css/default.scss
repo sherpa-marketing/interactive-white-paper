@@ -88,18 +88,18 @@ $color-purple: #813687;
   > section {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
 
     @media (min-width: map-get($grid-breakpoints, "md")) {
       padding-left: 2rem;
       padding-right: 2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
     }
 
     @media (min-width: map-get($grid-breakpoints, "lg")) {
       padding-left: 4rem;
       padding-right: 4rem;
-      padding-bottom: 4rem;
+      padding-bottom: 6rem;
     }
   }
 }
@@ -194,7 +194,11 @@ a.button {
 }
 
 .callout {
-  background: $gray-300;
+  background: #d9d9d9 !important;
+  max-width: 350px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  //padding-top: 100px;
 }
 
 .flip-card {
