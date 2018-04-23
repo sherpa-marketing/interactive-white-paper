@@ -104,6 +104,25 @@ $color-purple: #813687;
   }
 }
 
+.carousel-cell {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
 .with-background {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-01.jpg) no-repeat !important;
   background-size: cover !important;
@@ -326,4 +345,40 @@ a.button {
     background-image: url(../img/productivity.jpg);
     background-size: cover;
   }
+}
+
+.flickity-button {
+  background: #81368733;
+}
+
+.flickity-button:hover {
+  background: $color-purple;
+}
+
+.flickity-button-icon {
+  fill: white;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+
+  &.previous {
+    left: 0;
+  }
+
+  &.next {
+    right: 0;
+  }
+}
+
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-button:focus {
+  outline: none;
+  background: $color-purple;
+  box-shadow: 0 0 0 0 $color-purple;
 }

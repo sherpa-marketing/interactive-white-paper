@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
     <link rel="stylesheet" type="text/css" href="../lib/semantic-ui/semantic.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
@@ -17,22 +19,17 @@
 </head>
 <body class="">
 
-<div class="pages {{page.classes}}" tabindex="0">
+<div class="main-carousel {{page.classes}}" tabindex="0">
     {% for wp in pages %}
         {% assign wp_tokens = wp.path | split: '/' | reverse %}
         {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', ''   %}
-        <section tabindex="1" class="page-{{wp_name}} {{wp.classes}}">
+        <section tabindex="1" class="carousel-cell page-{{wp_name}} {{wp.classes}}">
             {{wp.content}}
         </section>
     {% endfor %}
 </div>
-<a class="button page-prev" ><i class="arrow left icon m-0"></i></a>
-<a class="button page-next" ><i class="arrow right icon m-0"></i></a>
-<div class="ui page dimmer">
-    <div class="content">
-        Hello
-    </div>
-</div>
+<!--<a class="button page-prev" ><i class="arrow left icon m-0"></i></a>-->
+<!--<a class="button page-next" ><i class="arrow right icon m-0"></i></a>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
         integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
@@ -40,6 +37,8 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
         integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"
         integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
@@ -49,13 +48,13 @@
 
 <script src="../lib/jquery.scrollstop.js"></script>
 
+<script src="../js/flickity-helpers.js"></script>
 <script src="../js/resize.min.js"></script>
 <script src="../js/scrollsnap.min.js"></script>
 <script src="../js/pages.min.js"></script>
 <script src="../js/flip.min.js"></script>
 
 <script>
-    $(".pages").focus();
 </script>
 
 </body>
