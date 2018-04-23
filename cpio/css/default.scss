@@ -210,7 +210,7 @@ a.button {
   color: white;
 
   .side {
-    height: 350px;
+    min-height: 350px;
 
     @media (min-width: map-get($grid-breakpoints, "sm")) {
       min-height: 270px;
