@@ -4,7 +4,105 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 </head>
+<style>
+    body { margin: 0;
+        /*border: 1px solid blue; */
+    }
+    #x3-sim {
+        margin-top: -95px;
+        height: 600px;
+        /*border: 1px solid red;*/
+    }
+    #x3-sim > .x3-inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    @media (min-width: 748px) {
+        #x3-sim {
+            margin-top: -120px;
+            height: 850px;
+        }
+        #x3-sim > .x3-inner {
+            width: 748px;
+        }
+    }
+    @media (min-width: 960px) {
+        #x3-sim {
+            margin-top: -200px;
+            height: 800px;
+        }
+        #x3-sim > .x3-inner {
+            width: 960px;
+        }
+    }
+
+    @font-face {
+        font-family: AdelleSAGE;
+        font-weight: 400;
+        font-style: normal;
+        src: url(../fonts/adellesage-webfont.f0ed893a.woff2) format("woff2"),url(../fonts/adellesage-webfont.f130da59.woff) format("woff"),url(../fonts/adellesage-webfont.ed04ff62.eot) format("embedded-opentype"),url(../fonts/adellesage-webfont.3b8f19d0.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 400;
+        font-style: normal;
+        src: url(../fonts/adellesanssage-webfont.5cb16a40.woff2) format("woff2"),url(../fonts/adellesanssage-webfont.b52cc537.woff) format("woff"),url(../fonts/adellesanssage-webfont.f226409f.eot) format("embedded-opentype"),url(../fonts/adellesanssage-webfont.a58f9930.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 400;
+        font-style: italic;
+        src: url(../fonts/adellesanssage-italic-webfont.e9db4696.woff2) format("woff2"),url(../fonts/adellesanssage-italic-webfont.3a5dd348.woff) format("woff"),url(../fonts/adellesanssage-italic-webfont.c5c0002c.eot) format("embedded-opentype"),url(../fonts/adellesanssage-italic-webfont.54639e06.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 700;
+        font-style: normal;
+        src: url(../fonts/adellesanssage-bold-webfont.7a82a0b8.woff2) format("woff2"),url(../fonts/adellesanssage-bold-webfont.550f18b1.woff) format("woff"),url(../fonts/adellesanssage-bold-webfont.71bf43f0.eot) format("embedded-opentype"),url(../fonts/adellesanssage-bold-webfont.49740eb0.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 700;
+        font-style: italic;
+        src: url(../fonts/adellesanssage-bolditalic-webfont.7ff304c0.woff2) format("woff2"),url(../fonts/adellesanssage-bolditalic-webfont.49c449d0.woff) format("woff"),url(../fonts/adellesanssage-bolditalic-webfont.cdf49435.eot) format("embedded-opentype"),url(../fonts/adellesanssage-bolditalic-webfont.eeb5d18e.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 100;
+        font-style: normal;
+        src: url(../fonts/adellesanssageth-webfont.388276be.woff2) format("woff2"),url(../fonts/adellesanssageth-webfont.557adc21.woff) format("woff"),url(../fonts/adellesanssageth-webfont.87685fa3.eot) format("embedded-opentype"),url(../fonts/adellesanssageth-webfont.3aeaba65.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 100;
+        font-style: italic;
+        src: url(../fonts/adellesanssageth-italic-webfont.9f7d360f.woff2) format("woff2"),url(../fonts/adellesanssageth-italic-webfont.2c81e090.woff) format("woff"),url(../fonts/adellesanssageth-italic-webfont.3b0c29a0.eot) format("embedded-opentype"),url(../fonts/adellesanssageth-italic-webfont.089d3bbc.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 300;
+        font-style: normal;
+        src: url(../fonts/adellesanssagelt-webfont.88880ba3.woff2) format("woff2"),url(../fonts/adellesanssagelt-webfont.7e78b5ef.woff) format("woff"),url(../fonts/adellesanssagelt-webfont.aa2fda96.eot) format("embedded-opentype"),url(../fonts/adellesanssagelt-webfont.8435a36b.ttf) format("truetype")
+    }
+
+    @font-face {
+        font-family: AdelleSansSAGE;
+        font-weight: 300;
+        font-style: italic;
+        src: url(../fonts/adellesanssagelt-italic-webfont.54e9a17d.woff2) format("woff2"),url(../fonts/adellesanssagelt-italic-webfont.586d6e41.woff) format("woff"),url(../fonts/adellesanssagelt-italic-webfont.1226ed3c.eot) format("embedded-opentype"),url(../fonts/adellesanssagelt-italic-webfont.b4574917.ttf) format("truetype")
+    }
+</style>
 <body>
+
 <div id="x3-sim">
   <div class="x3-inner">
    <div id="benefitssimulation_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">

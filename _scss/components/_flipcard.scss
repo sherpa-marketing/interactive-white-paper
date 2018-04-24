@@ -34,3 +34,29 @@
   }
 
 }
+
+@mixin flip-style($color, $image) {
+  // stylelint-disable-next-line font-family-no-missing-generic-family-keyword
+  .side {
+    background: $color;
+    .button {
+      background: $color;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color, 10%);
+        @extend .shadow-hover;
+      }
+
+      &:active,
+      &:focus {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken($color, 10%);
+        @extend .shadow-hover;
+      }
+    }
+  }
+
+  .side:first-child {
+    background-image: url($image);
+    background-size: cover;
+  }
+}
