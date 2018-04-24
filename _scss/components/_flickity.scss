@@ -1,0 +1,46 @@
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 100vh; /* height of carousel */
+  margin-right: 10px;
+  background-color: white;
+  overflow-y: auto;
+  touch-action: pan-y;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.flickity-button-icon {
+  fill: white;
+}
+
+.flickity-prev-next-button {
+  top: 40%;
+  width: 30px;
+  height: 42px;
+  border-radius: 0;
+
+  &.previous {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  &.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+}
+

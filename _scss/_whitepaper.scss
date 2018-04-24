@@ -1,95 +1,26 @@
-@import "components/text-truncate";
-@import "components/text-hide";
-@import "components/breakpoints";
+@import "mixins/text-truncate";
+@import "mixins/text-hide";
+@import "mixins/breakpoints";
 
-@import "components/variables";
-@import "components/spacing";
-@import "components/text";
+@import "variables";
 
-@import "components/animation-delay";
+@import "utils/spacing";
+@import "utils/text";
+@import "utils/animation-delay";
+@import "utils/shadows";
+
 @import "components/valigner";
+@import "components/flipcard";
+@import "components/flickity";
 
+html,
+body {
+  font-size: 16px;
+}
 
 body {
   background: #ccc;
-  //padding: 3rem;
 }
 
-.pages {
-  background: white;
 
-  &:focus {
-    outline: none;
-  }
 
-  > section {
-    background: white;
-
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
-.animated-hidden-start {
-  visibility: hidden;
-}
-
-.animated {
-  visibility: visible !important;
-}
-
-.z-depth-2 {
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-}
-
-.page-prev {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  padding: 0.75rem !important;
-  pointer-events: none;
-  //opacity: 0.3;
-}
-
-.first-page {
-
-}
-
-.page-next {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  padding: 0.75rem !important;
-  pointer-events: none;
-  //opacity: 0.3;
-}
-
-.flip-card {
-  width: 100%;
-
-  .sides {
-    width: 100%;
-  }
-
-  .side {
-    min-height: 250px;
-    background: yellow;
-    padding: 1.5rem;
-
-    .undo {
-      float: right;
-    }
-  }
-
-}
-
-.carousel-cell {
-  width: 100%; /* full width */
-  height: 100vh; /* height of carousel */
-  margin-right: 10px;
-  background-color: white;
-  overflow-y: auto;
-  touch-action: pan-y;
-}
