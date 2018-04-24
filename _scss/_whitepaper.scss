@@ -23,5 +23,10 @@ body {
   background: #ccc;
 }
 
+.contrast-dark {
+  > * {
+    text-shadow: 0 0 10px #00000099, 0 0 50px #000033;
+  }
+}
 
 
