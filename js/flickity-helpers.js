@@ -29,7 +29,8 @@ $(function() {
     $carousel.flickity({
         cellAlign: 'left',
         contain: true,
-        pageDots: false
+        pageDots: false,
+        friction: 0.55
     });
 
     $carousel.focus();
