@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="252px" height="142px" viewBox="0 0 252 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers Copy 2 + Rectangle 879 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="47" cy="21" r="6"></circle>
+        <circle id="path-2" cx="172" cy="36" r="6"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Simpler-2" transform="translate(-262.000000, -601.000000)">
+            <g id="Faster" transform="translate(-36.000000, 93.000000)">
+                <g id="X3" transform="translate(298.000000, 305.000000)">
+                    <g id="Imported-Layers-Copy-2-+-Rectangle-879-Copy" transform="translate(0.000000, 203.000000)">
+                        <g id="Rectangle-879-+-Imported-Layers-Copy-2">
+                            <rect id="Rectangle-879" fill="#FFFFFF" x="20.5558912" y="6.10752688" width="212.410876" height="129.784946"></rect>
+                            <path d="M14.9501438,131.052582 L14.9501435,12.2705966 C14.9501435,5.74218745 20.24727,0.433866279 26.7581651,0.433866279 L224.999564,0.433866279 C231.510459,0.433866279 236.807585,5.74218745 236.807585,12.2705966 L236.807589,131.052582 L228.408609,131.052582 L228.408606,9.26354902 L23.3341386,9.26354902 L23.3341388,131.052582 L14.9501438,131.052582 Z M144.542432,130.990787 C144.224005,132.548745 142.860388,133.72003 141.208314,133.72003 L110.579385,133.72003 C108.942295,133.72003 107.563694,132.548745 107.241521,130.990787 L0.328725882,130.990787 L0.328725882,133.836407 C0.328725882,138.104838 3.78272206,141.566134 8.04215118,141.566134 L243.715578,141.566134 C247.975007,141.566134 251.429003,138.104838 251.429003,133.836407 L251.429003,130.990787 L144.542432,130.990787 Z" id="Imported-Layers-Copy-2" fill="#51534A"></path>
+                        </g>
+                        <g id="Group-Copy" transform="translate(127.000000, 71.000000) scale(-1, 1) translate(-127.000000, -71.000000) translate(38.000000, 50.000000)">
+                            <path d="M1.5,21 L51.0101013,21" id="Line" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M129,6 L169,6" id="Line-Copy-7" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M92,21 L127,36" id="Line-Copy-8" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M132,36 L169,36" id="Line-Copy-10" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M91,20.9999999 L126.000001,7.99999999" id="Line-Copy-5" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M49.993238,20.733122 L84.0000015,20.7331219" id="Line-Copy-6" stroke="#DCDDDB" stroke-width="2" stroke-linecap="square" transform="translate(67.493238, 20.887984) scale(1, -1) translate(-67.493238, -20.887984) "></path>
+                            <circle id="Oval-84" fill="#00DC00" cx="6" cy="21" r="6"></circle>
+                            <g id="Oval-84-Copy">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <circle stroke="#00DC00" stroke-width="2" cx="47" cy="21" r="5"></circle>
+                            </g>
+                            <circle id="Oval-84-Copy-3" fill="#00DC00" cx="129" cy="6" r="6"></circle>
+                            <circle id="Oval-84-Copy-4" fill="#00DC00" cx="172" cy="6" r="6"></circle>
+                            <circle id="Oval-84-Copy-7" fill="#00DC00" cx="129" cy="36" r="6"></circle>
+                            <g id="Oval-84-Copy-6">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <circle stroke="#00DC00" stroke-width="2" cx="172" cy="36" r="5"></circle>
+                            </g>
+                            <circle id="Oval-84-Copy-5" fill="#00DC00" cx="88" cy="21" r="6"></circle>
+                        </g>
+                        <text id="Enterprise-Managemen" font-family="AdelleSansSAGE, Adelle Sans SAGE" font-size="12.8199997" font-weight="normal" fill="#51534A">
+                            <tspan x="55.9002417" y="36">Enterprise Management</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
