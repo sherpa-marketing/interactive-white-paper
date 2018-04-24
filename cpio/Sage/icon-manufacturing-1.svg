@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="159px" height="59px" viewBox="0 0 159 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 119 + Rectangle 94</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Flexible-1" sketch:type="MSArtboardGroup" transform="translate(-454.000000, -702.000000)" fill="#2A3456">
+            <g id="Faster" sketch:type="MSLayerGroup" transform="translate(-36.000000, 93.000000)">
+                <g id="Mask-+-23.11.12_490" transform="translate(36.000000, 16.000000)" sketch:type="MSShapeGroup">
+                    <g id="Flexible-2" transform="translate(229.000000, 275.000000)">
+                        <g id="Group">
+                            <g id="Manufacturing-+-Imported-Layers-+-Group" transform="translate(223.000000, 255.000000)">
+                                <g id="Imported-Layers-+-Group">
+                                    <g id="Group" transform="translate(2.000000, 63.000000)">
+                                        <g id="Rectangle-119-+-Rectangle-94">
+                                            <path d="M0,54.5 C0,52.0147186 2.01034749,50 4.50243954,50 L154.49756,50 C156.984189,50 159,52.0197757 159,54.5 C159,56.9852814 156.989653,59 154.49756,59 L4.50243954,59 C2.01581085,59 0,56.9802243 0,54.5 Z M4.5,58 C6.43299662,58 8,56.4329966 8,54.5 C8,52.5670034 6.43299662,51 4.5,51 C2.56700338,51 1,52.5670034 1,54.5 C1,56.4329966 2.56700338,58 4.5,58 Z M34.5,58 C36.4329966,58 38,56.4329966 38,54.5 C38,52.5670034 36.4329966,51 34.5,51 C32.5670034,51 31,52.5670034 31,54.5 C31,56.4329966 32.5670034,58 34.5,58 Z M64.5,58 C66.4329966,58 68,56.4329966 68,54.5 C68,52.5670034 66.4329966,51 64.5,51 C62.5670034,51 61,52.5670034 61,54.5 C61,56.4329966 62.5670034,58 64.5,58 Z M94.5,58 C96.4329966,58 98,56.4329966 98,54.5 C98,52.5670034 96.4329966,51 94.5,51 C92.5670034,51 91,52.5670034 91,54.5 C91,56.4329966 92.5670034,58 94.5,58 Z M124.5,58 C126.432997,58 128,56.4329966 128,54.5 C128,52.5670034 126.432997,51 124.5,51 C122.567003,51 121,52.5670034 121,54.5 C121,56.4329966 122.567003,58 124.5,58 Z M154.5,58 C156.432997,58 158,56.4329966 158,54.5 C158,52.5670034 156.432997,51 154.5,51 C152.567003,51 151,52.5670034 151,54.5 C151,56.4329966 152.567003,58 154.5,58 Z" id="Rectangle-119"></path>
+                                            <rect id="Rectangle-94" x="137" y="0" width="22" height="59"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
