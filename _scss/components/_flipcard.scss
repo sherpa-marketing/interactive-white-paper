@@ -1,5 +1,6 @@
 .flip-card {
   width: 100%;
+  color: white;
 
   .sides {
     width: 100%;
@@ -10,9 +11,26 @@
     background: yellow;
     padding: 1.5rem;
 
+    &.center {
+      position: relative;
+
+      > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
     .undo {
       float: right;
       cursor: pointer;
     }
   }
+
+  h1 {
+    color: white;
+    //margin-top: 40px;
+  }
+
 }
