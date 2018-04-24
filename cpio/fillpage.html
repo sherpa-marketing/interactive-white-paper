@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../lib/semantic-ui/semantic.min.css">
+
+    <link rel="stylesheet" href="css/default.css?cb=5"/>
+
+    <!--<style>-->
+    <!--body {-->
+    <!--/*display: flex;*/-->
+    <!--/*flex-direction: column;*/-->
+    <!--border: 1px solid red;-->
+    <!--min-height: calc(100vh - 2px);-->
+    <!--margin: 0;-->
+    <!--}-->
+
+    <!--body > div {-->
+    <!--border: 1px solid green;-->
+    <!--}-->
+
+    <!--body > div > div {-->
+    <!--border: 1px solid blue;-->
+    <!--}-->
+
+    <!--body > div.stretch {-->
+    <!--flex: 1;-->
+    <!--}-->
+
+    <!--.s2 {-->
+    <!--display: flex;-->
+    <!--flex-direction: column;-->
+    <!--min-height: 50vh;-->
+    <!--}-->
+
+    <!--.s2 > div.stretch {-->
+    <!--flex: 1;-->
+    <!--}-->
+
+    <!--</style>-->
+
+    <style>
+        body {
+            border: 1px solid red;
+        }
+
+        body > div {
+            border: 1px solid green;
+
+        }
+
+        body > div > div {
+            border: 1px solid blue;
+
+        }
+
+        body > div > div > div {
+            border: 1px solid yellow;
+
+        }
+
+        /*.growable {*/
+            /*min-height: 300px;*/
+        /*}*/
+    </style>
+</head>
+<body class="growable">
+<div class="">Top</div>
+<div class="">
+    <div>
+        Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>
+    </div>
+    <div class="grow-1 center">
+        Fill this one up
+    </div>
+    <div class="grow-2 bottom">
+        <div>
+        Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>Fill<br>
+
+            <div class="ui three column divided grid">
+                <div class="stretched row">
+                    <div class="column">
+                        <div class="ui segment">
+                            1
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment">
+                            1
+                        </div>
+                        <div class="ui segment">
+                            2
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment">
+                            1
+                        </div>
+                        <div class="ui segment">
+                            2
+                        </div>
+                        <div class="ui segment">
+                            3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        Other
+    </div>
+</div>
+<div class=" content">
+    <div class="grow-3">Top</div>
+    <div class="">Middle</div>
+    <div class="grow-1">Bottom</div>
+</div>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+
+<script src="../lib/semantic-ui/semantic.min.js"></script>
+<script src="../js/flickity-helpers.min.js"></script>
+<script src="../js/flip.min.js"></script>
+<script src="../js/grow.min.js"></script>
+
+<script>
+    $(function () {
+        $("[class^=\"grow-\"]").each(function() {
+            var $current = $(this);
+            while(!$current.parent().hasClass("growable")) {
+                $current = $current.parent();
+                $current.addClass("growable");
+                if(!$current.hasClass("grow")) {
+                    $current.addClass("grow");
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
