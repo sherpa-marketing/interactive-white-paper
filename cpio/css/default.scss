@@ -9,7 +9,7 @@ $color-purple: #813687;
 }
 
 .with-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-01.jpg) no-repeat !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero-01.jpg) no-repeat !important;
   background-size: cover !important;
   background-position-y: bottom !important;
   background-position-x: left !important;
@@ -64,6 +64,13 @@ $color-purple: #813687;
 
 .hero-03 {
   background-image: url(../img/hero-03.jpg);
+}
+
+.hero-04 {
+  background-image: url(../img/hero-04.jpg);
+}
+.hero-05 {
+  background-image: url(../img/hero-05.jpg);
 }
 
 h1 {
