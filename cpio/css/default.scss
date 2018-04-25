@@ -167,10 +167,10 @@ a.button {
 #flip-flexibility-man { @include flip-style(#3794b7, '../img/flexiblity.jpg'); }
 #flip-productivity-man { @include flip-style($color-purple, '../img/productivity.jpg'); }
 
-#flip-growth-nfp { @include  flip-style(#a3c642, '../img/growth.jpg'); }
-#flip-digital-nfp { @include flip-style(#a176be, '../img/digital.jpg'); }
-#flip-flexibility-nfp { @include flip-style(#7bb175, '../img/flexiblity.jpg'); }
-#flip-productivity-nfp { @include flip-style(#f69f20, '../img/productivity.jpg'); }
+#flip-growth-nfp { @include  flip-style(#a3c642, '../img/nfp-growth.jpg'); }
+#flip-digital-nfp { @include flip-style(#a176be, '../img/nfp-digital.jpg'); }
+#flip-flexibility-nfp { @include flip-style(#7bb175, '../img/nfp-flexiblity.jpg'); }
+#flip-productivity-nfp { @include flip-style(#f69f20, '../img/nfp-productivity.jpg'); }
 
 .flickity-button {
   background: #81368733;

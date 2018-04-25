@@ -30,7 +30,7 @@ $(function() {
         cellAlign: 'left',
         contain: true,
         pageDots: false,
-        friction: 0.55
+        friction: 0.25
     });
 
     $carousel.focus();
