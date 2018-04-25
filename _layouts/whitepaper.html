@@ -22,9 +22,10 @@
     {% for wp in pages %}
         {% assign wp_tokens = wp.path | split: '/' | reverse %}
         {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', ''   %}
-        <section tabindex="1" class="carousel-cell page-{{wp_name}} {{wp.classes}}">
-            {{wp.content}}
-        </section>
+<section tabindex="1" class="carousel-cell page-{{wp_name}} {{wp.classes}}">
+    {{wp.content}}
+</section>
+
     {% endfor %}
 </div>
 
