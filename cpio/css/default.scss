@@ -112,8 +112,8 @@ a.button {
   }
 
   &.small {
-    padding: 0.25rem;
-    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -194,4 +194,21 @@ a.button {
   }
 }
 
+
+#sage-animation {
+  background: rgb(244, 244, 244);
+
+  iframe {
+    width: 100%;
+    border-width: 0;
+    height: calc(600px - 95px);
+
+    @media (min-width: 748px) {
+        height: calc(850px - 120px);
+    }
+    @media (min-width: 960px) {
+        height: calc(800px - 200px);
+    }
+  }
+}
 
