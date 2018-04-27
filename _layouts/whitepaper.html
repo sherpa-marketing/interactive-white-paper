@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--{% assign uid = page.name | replace: '.html', '' %}-->
-    {% assign filter = page.pages | prepend: '/' | append: '/' %}
-    {% assign pages = site.whitepaper-pages | where_exp: "wp", "wp.relative_path contains filter" | sort: 'page' %}
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,13 +16,17 @@
 <body class="">
 
 <div class="main-carousel {{page.classes}}" tabindex="0">
-    {% for wp in pages %}
+    {% assign filters =  page.pages | replace: ' ', '' | split: ',' %}
+    {% assign pages = site.whitepaper-pages | sort: 'page' %}
+    {% for wp in pages  %}
         {% assign wp_tokens = wp.path | split: '/' | reverse %}
-        {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', ''   %}
+        {% assign wp_group = wp_tokens[1] %}
+        {% if filters contains wp_group %}
+                {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', ''   %}
 <section tabindex="1" class="carousel-cell page-{{wp_name}} {{wp.classes}}">
-    {{wp.content}}
+{{wp.content}}
 </section>
-
+        {% endif %}
     {% endfor %}
 </div>
 
