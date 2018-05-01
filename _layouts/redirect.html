@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sherpa Marketing</title>
+    <meta http-equiv="refresh" content="0;URL='{{page.redirect-url}}'" />
+</head>
+<body>
+<style>
+    body {
+        background-color: #dedede;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: helvetica, arial, sans-serif;
+        font-weight: lighter;
+        color: #888;
+    }
+</style>
+
+<script>
+    setTimeout(function() {
+        window.location.replace("{{page.redirect-url}}");
+    }, 0);
+</script>
+</body>
+</html>
