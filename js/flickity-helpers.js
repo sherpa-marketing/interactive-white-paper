@@ -14,7 +14,7 @@ $(function() {
         }, 10)
     });
 
-    $carousel.on('settle.flickity', function( event, index ) {
+    $carousel.on('change.flickity', function( event, index ) {
         var flick = $carousel.data('flickity');
         // $carousel.find("[data-animation]").each(function () {
         //     $(this).removeClass("animated");
@@ -27,12 +27,13 @@ $(function() {
     });
 
     $carousel.flickity({
-         cellAlign: 'left',
+        cellAlign: 'left',
         contain: true,
         pageDots: false,
         dragThreshold: 20,
         selectedAttraction: 0.2,
-        friction: 0.8
+        friction: 0.8,
+        watchCSS: false
     });
 
     $carousel.focus();

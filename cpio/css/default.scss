@@ -1,7 +1,7 @@
 ---
 ---
 
-$font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+$font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 @import "whitepaper";
 
@@ -12,7 +12,7 @@ $color-purple: #813687;
 }
 
 .text-purple {
- color: $color-purple;
+  color: $color-purple;
 }
 
 .with-background {
@@ -60,6 +60,7 @@ $color-purple: #813687;
 
   + * {
     background: white;
+    border-radius: 5px;
   }
 
   h1 {
@@ -89,12 +90,15 @@ $color-purple: #813687;
 .hero-06 {
   background-image: url(../img/hero-06.jpg?cb=1);
 }
+
 .hero-07 {
   background-image: url(../img/hero-07.jpg?cb=1);
 }
+
 .hero-08 {
   background-image: url(../img/hero-08.jpg?cb=1);
 }
+
 .hero-09 {
   background-image: url(../img/hero-09.jpg?cb=1);
 }
@@ -102,7 +106,6 @@ $color-purple: #813687;
 .hero-10 {
   background-image: url(../img/hero-10.jpg?cb=1);
 }
-
 
 h1 {
   font-size: 2rem;
@@ -127,7 +130,6 @@ h2 {
     font-size: 2rem;
   }
 }
-
 
 .button {
   background: $color-purple;
@@ -207,15 +209,37 @@ h2 {
   }
 }
 
-#flip-growth-man { @include  flip-style(#74c2ac, '../img/growth.jpg?cb=1'); }
-#flip-digital-man { @include flip-style(#cd5998, '../img/digital.jpg?cb=1'); }
-#flip-flexibility-man { @include flip-style(#3794b7, '../img/flexibility.jpg?cb=1'); }
-#flip-productivity-man { @include flip-style($color-purple, '../img/productivity.jpg?cb=1'); }
+#flip-growth-man {
+  @include flip-style(#74c2ac, '../img/growth.jpg?cb=1');
+}
 
-#flip-growth-nfp { @include  flip-style(#a3c642, '../img/nfp-growth.jpg?cb=1'); }
-#flip-digital-nfp { @include flip-style(#a176be, '../img/nfp-digital.jpg?cb=1'); }
-#flip-flexibility-nfp { @include flip-style(#7bb175, '../img/nfp-flexiblity.jpg?cb=1'); }
-#flip-productivity-nfp { @include flip-style(#f69f20, '../img/nfp-productivity.jpg?cb=1'); }
+#flip-digital-man {
+  @include flip-style(#cd5998, '../img/digital.jpg?cb=1');
+}
+
+#flip-flexibility-man {
+  @include flip-style(#3794b7, '../img/flexibility.jpg?cb=1');
+}
+
+#flip-productivity-man {
+  @include flip-style($color-purple, '../img/productivity.jpg?cb=1');
+}
+
+#flip-growth-nfp {
+  @include flip-style(#a3c642, '../img/nfp-growth.jpg?cb=1');
+}
+
+#flip-digital-nfp {
+  @include flip-style(#a176be, '../img/nfp-digital.jpg?cb=1');
+}
+
+#flip-flexibility-nfp {
+  @include flip-style(#7bb175, '../img/nfp-flexiblity.jpg?cb=1');
+}
+
+#flip-productivity-nfp {
+  @include flip-style(#f69f20, '../img/nfp-productivity.jpg?cb=1');
+}
 
 .flickity-button {
   background: #81368733;
@@ -239,7 +263,6 @@ h2 {
   }
 }
 
-
 #sage-animation {
   background: rgb(244, 244, 244);
 
@@ -249,10 +272,10 @@ h2 {
     height: calc(600px - 95px);
 
     @media (min-width: 748px) {
-        height: calc(850px - 120px);
+      height: calc(850px - 120px);
     }
     @media (min-width: 960px) {
-        height: calc(800px - 200px);
+      height: calc(800px - 200px);
     }
   }
 }
@@ -268,11 +291,11 @@ h2 {
     opacity: 0;
     transition: visibility 1s, opacity 1s linear;
 
-     &.active {
-       //display: block;
-       visibility: visible;
-       opacity: 1;
-     }
+    &.active {
+      //display: block;
+      visibility: visible;
+      opacity: 1;
+    }
 
     .form-fields {
       margin: auto;
@@ -347,3 +370,41 @@ h2 {
   overflow-y: auto;
 }
 
+//.carousel:after {
+//  content: '';
+//}
+//
+//[data-animation] {
+//  visibility: visible;
+//}
+
+.tabs {
+  .column {
+    color: $white;
+    background: $gray-500;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    display: none !important;
+
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+      display: inline-block !important;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, "xl")) {
+      font-size: 1rem;
+    }
+
+    &.active {
+      color: $white;
+      background: $color-purple;
+      display: inline-block !important;
+    }
+  }
+
+  + * {
+    background: white;
+  }
+}
