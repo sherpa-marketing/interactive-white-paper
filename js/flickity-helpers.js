@@ -29,7 +29,7 @@ $(function() {
     $carousel.flickity({
         cellAlign: 'left',
         contain: true,
-        pageDots: false,
+        pageDots: true,
         dragThreshold: 20,
         selectedAttraction: 0.2,
         friction: 0.8,

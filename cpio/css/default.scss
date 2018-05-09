@@ -263,6 +263,15 @@ h2 {
   }
 }
 
+.flickity-page-dots .dot {
+  background: $color-purple;
+  border: 2px solid $color-purple;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white;
+  border: 2px solid $color-purple;
+}
 #sage-animation {
   background: rgb(244, 244, 244);
 
