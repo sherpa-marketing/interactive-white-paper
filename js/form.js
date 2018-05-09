@@ -26,24 +26,24 @@ $(function() {
             if ($form.data('store-key')) {
                 console.log(data);
                 localStorage.setItem($form.data('store-key'), JSON.stringify(data));
+                $('.main-carousel').flickity( 'select', 1, false, true );
                 $(window).trigger( "storage" );
-
             }
 
-            //console.log(data);
-            $.ajax({
-                type: 'POST',
-                url: URL,
-                dataType: 'json',
-                contentType: 'application/json',
-                data: JSON.stringify(data),
-                success: function () {
-                    // clear form and show a success message
-                },
-                error: function () {
-                    // show an error message
-                }
-            });
+            console.log(data);
+            // $.ajax({
+            //     type: 'POST',
+            //     url: URL,
+            //     dataType: 'json',
+            //     contentType: 'application/json',
+            //     data: JSON.stringify(data),
+            //     success: function () {
+            //         // clear form and show a success message
+            //     },
+            //     error: function () {
+            //         // show an error message
+            //     }
+            // });
         });
 
         $(window).bind('storage', function () {

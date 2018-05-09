@@ -145,6 +145,7 @@ h2 {
   @extend .shadow;
 
   &:hover {
+    color: white;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten($color-purple, 10%);
     @extend .shadow-hover;
   }
