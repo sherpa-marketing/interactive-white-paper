@@ -27,10 +27,12 @@ $(function() {
     });
 
     $carousel.flickity({
-        cellAlign: 'left',
+         cellAlign: 'left',
         contain: true,
         pageDots: false,
-        friction: 0.25
+        dragThreshold: 20,
+        selectedAttraction: 0.2,
+        friction: 0.8
     });
 
     $carousel.focus();
