@@ -1,8 +1,15 @@
 ---
 ---
+
+$font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+
 @import "whitepaper";
 
 $color-purple: #813687;
+
+*, button, input, optgroup, select, textarea {
+  font-family: $font-family;
+}
 
 .text-purple {
  color: $color-purple;
@@ -18,7 +25,12 @@ $color-purple: #813687;
 
   h1 {
     color: white;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 5rem;
+    }
   }
+
 }
 
 [class^="hero-"] {
@@ -83,11 +95,12 @@ h1 {
   font-size: 2rem;
   color: $color-purple;
 
-  @media (min-width: map-get($grid-breakpoints, "md")) {
-    font-size: 4rem;
-  }
   @media (min-width: map-get($grid-breakpoints, "sm")) {
     font-size: 3rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: 4rem;
   }
 }
 
@@ -103,7 +116,7 @@ h2 {
 }
 
 
-a.button {
+.button {
   background: $color-purple;
   color: $white;
   cursor: pointer;
@@ -113,6 +126,7 @@ a.button {
   overflow: hidden;
   -webkit-transition: background 1s ease-out;
   transition: background 1s ease-out;
+  border-width: 0;
 
   @extend .no-user-select;
   @extend .shadow;
@@ -227,5 +241,95 @@ a.button {
         height: calc(800px - 200px);
     }
   }
+}
+
+.wizard {
+  position: relative;
+  .wizard-page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    //display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+
+     &.active {
+       //display: block;
+       visibility: visible;
+       opacity: 1;
+     }
+
+    .form-fields {
+      margin: auto;
+      max-width: 600px;
+      background: #ffffff66;
+      padding: 0.75rem 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.sortable {
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    cursor: move;
+    background: $gray-200;
+    color: black;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    user-select: none;
+
+    &:before {
+      color: $color-purple;
+      content: "Issue: ";
+    }
+  }
+}
+
+.field {
+  position: relative;
+  width: 100%;
+  margin-top: 0.75rem;
+
+  label {
+    display: none;
+  }
+
+  input[type=text], input[type=email] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid $white;
+
+    &:invalid {
+      border: 2px solid $color-purple;
+    }
+
+  }
+
+  &.error {
+    &:after {
+      content: "!";
+      position: absolute;
+      font-weight: bold;
+      right: 0.5rem;
+      top: 50%;
+      margin-top: -0.75rem;
+      background: #813687;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.75rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  button {
+  }
+}
+
+.dimmer {
+  overflow-y: auto;
 }
 

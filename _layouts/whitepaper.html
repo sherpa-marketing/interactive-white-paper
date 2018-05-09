@@ -23,20 +23,23 @@
 </head>
 <body class="">
 
+
 <div class="main-carousel {{page.classes}}" tabindex="0">
-    {% assign filters =  page.pages | replace: ' ', '' | split: ',' %}
+    {% assign filters = page.pages | replace: ' ', '' | split: ',' %}
     {% assign pages = site.whitepaper-pages | sort: 'page' %}
-    {% for wp in pages  %}
-        {% assign wp_tokens = wp.path | split: '/' | reverse %}
-        {% assign wp_group = wp_tokens[1] %}
-        {% if filters contains wp_group %}
-                {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', ''   %}
+    {% for wp in pages %}
+    {% assign wp_tokens = wp.path | split: '/' | reverse %}
+    {% assign wp_group = wp_tokens[1] %}
+    {% if filters contains wp_group %}
+    {% assign wp_name = wp_tokens[0] | replace: '.markdown', '' | replace: '.html', '' %}
 <section tabindex="1" class="carousel-cell page-{{wp_name}} {{wp.classes}}">
 {{wp.content}}
 </section>
-        {% endif %}
+    {% endif %}
     {% endfor %}
 </div>
+
+{% include _dimmer_cpio.html %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
         integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
@@ -44,12 +47,21 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
         integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"
+        integrity="sha256-ncVUo40HSaxFORNNlffKfkkhbsUHNLAzQ2SFlRUw7gA=" crossorigin="anonymous"></script>
 <script src="../lib/flickity/flickity.pkgd.min.js"></script>
 <script src="../lib/semantic-ui/semantic.min.js"></script>
 <script src="../js/flickity-helpers.min.js"></script>
 <script src="../js/flip.min.js"></script>
+<script src="../js/form.js"></script>
+<script src="../js/sortable.js"></script>
+<script src="../js/wizard.js"></script>
+
 <!--<script src="../js/grow.min.js"></script>-->
+<script>
+
+
+</script>
 
 </body>
 </html>
