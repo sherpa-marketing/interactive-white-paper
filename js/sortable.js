@@ -10,6 +10,7 @@ $(function () {
         }
     }
 
+
     $(".sortable").each(function() {
         var $this = $(this);
         Sortable.create(this, {
