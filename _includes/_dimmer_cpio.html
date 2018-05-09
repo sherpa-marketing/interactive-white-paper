@@ -1,0 +1,71 @@
+<div class="ui page dimmer p-0 growable">
+    <div class="content grow-1 growable with-background" style="width:100%">
+
+        <div class="pt-5 text-center">
+            <div class="logos-container">
+                <img class="ui middle aligned mr-3" src="img/cpio-logo-white.svg">
+                <img class="ui middle aligned ml-3" src="img/sage-partner-logo-new.png">
+            </div>
+        </div>
+        <div class="grow-1 xcenter text-center"><div>
+            <form class="access-form wizard mt-3" data-store-key="cpio-user" data-form-id="manufacturing" novalidate>
+                <div class="wizard-page active" data-wizard-page="0">
+                    <h1 class="text-uppercase contrast-dark">
+                        <div class="delay-400ms px-5" xdata-animation="slideInLeft">Build a Successful</div>
+                        <div class="delay-600ms px-5" xdata-animation="slideInLeft">Strategy for the Future</div>
+                    </h1>
+                    <div class="delay-800ms mt-5" xdata-animation="slideInLeft">
+                        <div class="form-fields">
+                            <input type="hidden" name="_subject" value="CPiO Whitepaper Lead"/>
+                            <input type="hidden" name="_title" value="{{page.title}}"/>
+
+                            <div class="field">
+                                <label for="name-input">Name:</label>
+                                <input type="text" id="name-input" name="name" placeholder="Please enter your full name" required/>
+                            </div>
+                            <div class="field error">
+                                <label for="email-input">Email:</label>
+                                <input type="email" id="email-input" name="email" placeholder="Please enter your email address" required/>
+                            </div>
+
+                            <div class="field">
+                                <button class="button wizard-next" type="button">Here's How <i class="arrow right icon mr-0 ml-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard-page" data-wizard-page="1">
+                    <h1 class="text-uppercase contrast-dark">
+                        <div class="delay-400ms px-5" xdata-animation="slideInLeft">What's holding your</div>
+                        <div class="delay-600ms px-5" xdata-animation="slideInLeft">business back?</div>
+                    </h1>
+                    <h3 class="contrast-dark">
+                        Consider these challenges to your organisation’s growth
+                        and move them from most to least important
+                    </h3>
+                    <div class="delay-800ms mt-5" xdata-animation="slideInLeft">
+                        <div class="form-fields">
+                            <div class="field">
+                                <input type="hidden" id="issues" name="issues" />
+                                <ul class="sortable" id="user-issues" data-sortable-input="#issues">
+                                    <li>Managing a global network of partners and suppliers</li>
+                                    <li>Meeting the needs of an evolving market</li>
+                                    <li>Ensuring regulatory compliance</li>
+                                    <li>Getting the right information to innovate</li>
+                                    <li>Legacy systems preventing optimisation</li>
+                                    <li>Falling behind in the race to technologise</li>
+                                </ul>
+                            </div>
+
+                            <div class="field">
+                                <button class="button" type="submit">Get Started <i class="arrow right icon mr-0 ml-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div></div>
+
+    </div>
+</div>
