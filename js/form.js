@@ -31,19 +31,19 @@ $(function() {
             }
 
             console.log(data);
-            // $.ajax({
-            //     type: 'POST',
-            //     url: URL,
-            //     dataType: 'json',
-            //     contentType: 'application/json',
-            //     data: JSON.stringify(data),
-            //     success: function () {
-            //         // clear form and show a success message
-            //     },
-            //     error: function () {
-            //         // show an error message
-            //     }
-            // });
+            $.ajax({
+                type: 'POST',
+                url: URL,
+                dataType: 'json',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function () {
+                    // clear form and show a success message
+                },
+                error: function () {
+                    // show an error message
+                }
+            });
         });
 
         $(window).bind('storage', function () {
