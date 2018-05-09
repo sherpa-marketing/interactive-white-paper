@@ -89,6 +89,19 @@ $color-purple: #813687;
 .hero-06 {
   background-image: url(../img/hero-06.jpg);
 }
+.hero-07 {
+  background-image: url(../img/hero-07.jpg);
+}
+.hero-08 {
+  background-image: url(../img/hero-08.jpg);
+}
+.hero-09 {
+  background-image: url(../img/hero-09.jpg);
+}
+}
+.hero-10 {
+  background-image: url(../img/hero-10.jpg);
+}
 
 
 h1 {
@@ -195,7 +208,7 @@ h2 {
 
 #flip-growth-man { @include  flip-style(#74c2ac, '../img/growth.jpg'); }
 #flip-digital-man { @include flip-style(#cd5998, '../img/digital.jpg'); }
-#flip-flexibility-man { @include flip-style(#3794b7, '../img/flexiblity.jpg'); }
+#flip-flexibility-man { @include flip-style(#3794b7, '../img/flexibility.jpg'); }
 #flip-productivity-man { @include flip-style($color-purple, '../img/productivity.jpg'); }
 
 #flip-growth-nfp { @include  flip-style(#a3c642, '../img/nfp-growth.jpg'); }
