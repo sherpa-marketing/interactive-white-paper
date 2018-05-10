@@ -5,10 +5,11 @@ $(function () {
                 .find('li')
                 .map(function() { return $(this).text(); })
                 .get()
-                .join(', ');
+                .join('\n');
             $($sortable.data('sortable-input')).val(items);
         }
     }
+
 
     $(".sortable").each(function() {
         var $this = $(this);
