@@ -328,10 +328,10 @@ h2 {
     padding: 0.5rem;
     user-select: none;
 
-    &:before {
-      color: $color-purple;
-      content: "Issue: ";
-    }
+    //&:before {
+    //  color: $color-purple;
+    //  content: "Issue: ";
+    //}
   }
 }
 
