@@ -1,0 +1,36 @@
+---
+---
+
+body {
+  padding: 0;
+}
+
+iframe {
+  height: calc(100% - 0px);
+  width: calc(100% - 0px);
+  top: 0;
+  left: 0;
+  border: 0;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 3rem;
+  }
+
+  iframe {
+    top: 3rem;
+    left: 3rem;
+    height: calc(100% - 6rem);
+    width: calc(100% - 6rem);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  }
+}
+
+.header-container,
+.nav-primary,
+.main-footer {
+  display: none;
+}
