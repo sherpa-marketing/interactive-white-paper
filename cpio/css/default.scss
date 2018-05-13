@@ -33,6 +33,24 @@ $color-purple: #813687;
 
 }
 
+.page-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero-01.jpg?cb=1) no-repeat !important;
+  background-size: cover !important;
+  background-position-y: bottom !important;
+  background-position-x: left !important;
+  color: white;
+  padding: 0 !important;
+
+  h1 {
+    color: white;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 5rem;
+    }
+  }
+
+}
+
 [class^="hero-"] {
   color: white;
   background-position: center center;
