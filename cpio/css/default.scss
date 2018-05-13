@@ -431,6 +431,7 @@ h2 {
     margin-right: 0.4rem;
     font-size: 0.8rem;
     display: none !important;
+    cursor: pointer;
 
     @media (min-width: map-get($grid-breakpoints, "md")) {
       display: inline-block !important;
@@ -442,6 +443,7 @@ h2 {
 
     &.active {
       color: $white;
+      cursor: inherit;
       background: $color-purple;
       display: inline-block !important;
     }
