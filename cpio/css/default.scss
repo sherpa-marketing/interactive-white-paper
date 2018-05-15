@@ -224,7 +224,7 @@ h2 {
 
 .page-prev,
 .page-next {
-  background: #81368733 !important;
+  background: rgba(129, 54, 135, 0.2) !important;
 }
 
 .logos-container {
@@ -300,7 +300,7 @@ h2 {
 }
 
 .flickity-button {
-  background: #81368733;
+  background: rgba(129, 54, 135, 0.2);
 
   &:hover {
     background: $color-purple;
