@@ -363,17 +363,12 @@ h2 {
       //display: block;
       opacity: 1;
       visibility: visible;
-      opacity: 1;
     }
 
     .form-fields {
-      //background: #ffffff66;
-      margin: auto;
-      margin-bottom: 2rem;
+      margin: auto auto 2rem;
       max-width: 600px;
-      //background: #ffffff66;
       padding: 0.75rem 2rem;
-      margin-bottom: 2rem;
     }
   }
 }
@@ -413,7 +408,6 @@ h2 {
   }
 
   .invalid-feedback {
-    visibility: hidden;
     padding: 0 3px 1px 3px;
     visibility: hidden;
   }
@@ -426,7 +420,6 @@ h2 {
       border: 2px solid $color-purple;
 
       + .invalid-feedback {
-        visibility: visible;
         background: $color-purple;
         visibility: visible;
 
@@ -439,16 +432,10 @@ h2 {
           line-height: 1.5rem;
           margin-top: -1.25rem;
           position: absolute;
-          font-weight: bold;
           right: 0.5rem;
           text-align: center;
           top: 50%;
-          margin-top: -1.25rem;
-          background: #813687;
           width: 1.5rem;
-          height: 1.5rem;
-          border-radius: 0.75rem;
-          line-height: 1.5rem;
         }
       }
     }
@@ -478,8 +465,6 @@ h2 {
     padding-right: 0;
     margin-left: 0.4rem;
     margin-right: 0.4rem;
-    font-size: 0.8rem;
-    display: none !important;
 
     @media (min-width: map-get($grid-breakpoints, "md")) {
       display: inline-block !important;
@@ -492,7 +477,6 @@ h2 {
     &.active {
       color: $white;
       background: $color-purple;
-      color: $white;
       cursor: inherit;
       display: inline-block !important;
     }
