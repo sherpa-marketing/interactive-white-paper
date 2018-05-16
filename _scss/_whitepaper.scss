@@ -20,16 +20,20 @@ body {
   font-size: 16px;
 
   @media (min-width: map-get($grid-breakpoints, "md")) {
-    font-size: 1.4vw;
-  }
-
-  @media (min-width: map-get($grid-breakpoints, "lg")) {
     font-size: 1.1vw;
   }
 
-  @media (min-width: map-get($grid-breakpoints, "xl")) {
+  @media (min-width: map-get($grid-breakpoints, "md")) and (min-aspect-ratio: 2/1) {
     font-size: 0.85vw;
   }
+
+  //@media (min-width: map-get($grid-breakpoints, "lg")) {
+  //  font-size: 1.1vw;
+  //}
+  //
+  //@media (min-width: map-get($grid-breakpoints, "xl")) {
+  //  font-size: 0.85vw;
+  //}
 }
 
 body {
