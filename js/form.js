@@ -24,13 +24,13 @@ $(function() {
             var data = serialize($form);
 
             if ($form.data('store-key')) {
-                console.log(data);
                 localStorage.setItem($form.data('store-key'), JSON.stringify(data));
                 $('.main-carousel').flickity( 'select', 1, false, true );
                 $(window).trigger( "storage" );
             }
 
-            console.log(data);
+            data.cuid = localStorage.getItem('cuid');
+
             $.ajax({
                 type: 'POST',
                 url: URL,
