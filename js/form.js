@@ -13,7 +13,7 @@ $(function() {
     function toggleDimmer($form) {
         $form.closest( ".dimmer" ).toggleClass(
             'active',
-            !localStorage.getItem($form.data('store-key')));
+            !window.localStorageSafe.getItem($form.data('store-key')));
     }
 
     $('.access-form').each(function() {
@@ -24,13 +24,12 @@ $(function() {
             var data = serialize($form);
 
             if ($form.data('store-key')) {
-                localStorage.setItem($form.data('store-key'), JSON.stringify(data));
+                window.localStorageSafe.setItem($form.data('store-key'), JSON.stringify(data));
                 $('.main-carousel').flickity( 'select', 1, false, true );
                 $(window).trigger( "storage" );
             }
 
-            data.cuid = localStorage.getItem('cuid');
-
+            data.cuid = window.localStorageSafe.getItem('cuid');
             $.ajax({
                 type: 'POST',
                 url: URL,

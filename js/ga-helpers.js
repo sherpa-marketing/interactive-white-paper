@@ -11,10 +11,10 @@ $(function() {
     }
 
     function cuid() {
-        var cuid = localStorage.getItem('cuid');
+        var cuid = window.localStorageSafe.getItem('cuid');
         if (!cuid) {
             cuid = guid();
-            localStorage.setItem('cuid', cuid);
+            window.localStorageSafe.setItem('cuid', cuid);
         }
         return cuid;
     }

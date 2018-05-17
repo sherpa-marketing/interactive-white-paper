@@ -417,6 +417,23 @@ h5 {
   }
 }
 
+ol.sortable {
+  counter-reset: section;
+
+  li {
+    padding-left: 25px;
+
+    &:before {
+      background: $gray-200;
+      counter-increment: section;
+      content: counter(section) '.';
+      position: absolute;
+      left: 0;
+      padding: 0 6px;
+    }
+  }
+}
+
 .field {
   margin-top: 0.75rem;
   position: relative;
@@ -511,3 +528,5 @@ h5 {
     background: white;
   }
 }
+
+
