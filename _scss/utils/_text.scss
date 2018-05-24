@@ -1,5 +1,33 @@
 // stylelint-disable declaration-no-important
 
+h1 {
+  font-size: 2rem;
+
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    font-size: 2rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+
 //
 // Text
 //
