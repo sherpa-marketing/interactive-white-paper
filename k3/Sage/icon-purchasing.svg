@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="89px" height="89px" viewBox="0 0 89 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 1 + Incomeincrease</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Faster-1" sketch:type="MSArtboardGroup" transform="translate(-338.000000, -727.000000)">
+            <g id="Faster" sketch:type="MSLayerGroup" transform="translate(-36.000000, 93.000000)">
+                <g id="Faster-2" transform="translate(267.000000, 230.000000)" sketch:type="MSShapeGroup">
+                    <g id="graphic">
+                        <g id="Oval-1-+-Oval-1-Copy-2" transform="translate(0.000000, 3.000000)">
+                            <g id="Oval-1-+-Incomeincrease" transform="translate(107.962963, 401.104605)">
+                                <g id="Oval-1" fill="#2A3456">
+                                    <ellipse cx="44" cy="44.0130029" rx="44" ry="44.0130029"></ellipse>
+                                </g>
+                                <g id="Imported-Layers" transform="translate(22.000000, 27.000000)" fill="#FFFFFF">
+                                    <path d="M10.2477995,25.4408898 L36.0691584,25.4408898 L43.4462336,7.03750244 L10.5126912,7.03750244 L7.81669973,0.569209756 L0.436433067,0.569209756 L0.436433067,4.24797659 L5.41990827,4.24797659 L6.56963413,7.03750244 L6.5608576,7.03750244 L10.2477995,25.4408898 Z" id="Fill-1"></path>
+                                    <path d="M13.1089493,27.8944624 C11.0704,27.8944624 9.42200747,29.5423844 9.42200747,31.5732293 C9.42200747,33.6072585 11.0704,35.2519961 13.1089493,35.2519961 C15.1467008,35.2519961 16.7990827,33.6072585 16.7990827,31.5732293 C16.7990827,29.5423844 15.1435093,27.8944624 13.1089493,27.8944624 L13.1089493,27.8944624 Z" id="Fill-2"></path>
+                                    <path d="M36.3212843,31.5732293 C36.3212843,36.4803746 28.9474005,36.4803746 28.9474005,31.5732293 C28.9474005,26.6692683 36.3212843,26.6692683 36.3212843,31.5732293" id="Fill-3"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
