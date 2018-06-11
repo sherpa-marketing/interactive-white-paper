@@ -4,6 +4,14 @@
 $colour-primary: #008720;
 @import "sage-base";
 
+.logos-container {
+  img:first-child {
+    background: white;
+    border-radius: 3px;
+    padding: 10px;
+  }
+}
+
 .text-purple {
   color: $colour-primary;
 }
