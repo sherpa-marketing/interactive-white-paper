@@ -1,0 +1,124 @@
+---
+---
+
+$font-family: 'Montserrat',Arial,sans-serif;
+$colour-primary: #011748;
+
+@import "whitepaper";
+
+body {
+  //font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+  color: gray;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.button {
+  margin-top: 2.8rem;
+  background: $colour-primary;
+  color: #fff;
+  padding: 1.25em 3.12em;
+  text-decoration: none;
+  display: inline-block;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: #2daae1;
+  }
+}
+
+.sherpa-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 35px;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.page-cover {
+  background: url('../img/hero-sherpa.jpg?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  color: white;
+  padding: 0 !important;
+
+  h1 {
+    color: $colour-primary !important;
+    font-size: 5.86rem;
+    letter-spacing: -0.075em;
+    line-height: 1em;
+    margin-top: 0;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 7rem !important;
+    }
+
+  }
+}
+
+.sherpa-background-wrapper {
+  height: 5.6vw;
+}
+.sherpa-intro-text__background {
+  overflow: hidden;
+  display: none;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: #eee;
+  clip-path: polygon(100% 100%,100% 0,100% calc( 100% - 5.5vw),0 100%);
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  &::before {
+    @media (min-width: 1216px) {
+      width: 29vw;
+    }
+
+    @media (min-width: 1024px) {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 31vw;
+      height: 100%;
+      background-image: url(https://cdn2.hubspot.net/hubfs/733226/Sherpa%202018/Patterns/svg-pattern__zigzag--teal.svg?t=1527685918116);
+    }
+  }
+
+  &::after {
+    @media (min-width: 1216px) {
+      right: 29vw;
+    }
+    @media (min-width: 1024px) {
+      content: '';
+      position: absolute;
+      right: 31vw;
+      bottom: 0;
+      width: 100%;
+      height: 200%;
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right;
+      -webkit-transform: rotate(21.7deg);
+      transform: rotate(21.7deg);
+      background: #eee;
+    }
+  }
+}

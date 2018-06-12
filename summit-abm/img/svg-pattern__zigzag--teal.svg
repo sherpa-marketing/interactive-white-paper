@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="156" height="36" viewBox="0 0 100 24.4">
+	<g fill="#00BDB6" fill-opacity="0.6">
+		<polygon class="st2" points="-2.9,73.2 50,27 102.9,73.2 102.9,70 50,23.8 -2.9,70"/>
+		<polygon class="st2" points="-2.9,24.4 50,-21.8 102.9,24.4 102.9,21.2 50,-25 -2.9,21.2"/>
+		<polygon class="st2" points="-2.9,0 50,-46.2 102.9,0 102.9,-3.2 50,-49.5 -2.9,-3.2"/>
+		<polygon class="st2" points="-2.9,48.8 50,2.6 102.9,48.8 102.9,45.6 50,-0.6 -2.9,45.6"/>
+	</g>
+</svg>

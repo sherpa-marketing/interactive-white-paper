@@ -5,27 +5,6 @@ $colour-primary: #813687 !default;
 @import "whitepaper";
 
 
-*, button, input, optgroup, select, textarea {
-  font-family: $font-family;
-}
-
-@mixin cover-page($image) {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($image) no-repeat !important;
-  background-size: cover !important;
-  background-position-y: bottom !important;
-  background-position-x: left !important;
-  color: white;
-  padding: 0 !important;
-
-  h1 {
-    color: white;
-
-    @media (min-width: map-get($grid-breakpoints, "lg")) {
-      font-size: 5rem;
-    }
-  }
-}
-
 [class^="hero-"] {
   color: white;
   background-position: center center;

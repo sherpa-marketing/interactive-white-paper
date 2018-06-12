@@ -41,8 +41,28 @@ body {
   background: #ccc;
 }
 
+*, button, input, optgroup, select, textarea {
+  font-family: $font-family;
+}
+
 .contrast-dark {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 0 50px #000033;
 }
 
+@mixin cover-page($image) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($image) no-repeat !important;
+  background-size: cover !important;
+  background-position-y: bottom !important;
+  background-position-x: left !important;
+  color: white;
+  padding: 0 !important;
+
+  h1 {
+    color: white;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 5rem;
+    }
+  }
+}
 

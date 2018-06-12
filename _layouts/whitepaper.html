@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" href="css/default.css?cb=14"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
 
     <script>
         if (document.location.href.indexOf('https://sherpa-marketing.github.io/interactive-white-paper') === 0) {
@@ -39,7 +40,7 @@
     {% endfor %}
 </div>
 
-{% include {{ page.dimmer-include }} %}
+{% if page.dimmer-include %}{% include {{ page.dimmer-include }} %}{% endif %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
         integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
