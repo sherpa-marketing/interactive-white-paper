@@ -52,4 +52,5 @@ $(function() {
         toggleDimmer($form);
     });
 
+    $('.ui.radio.checkbox').checkbox();
 });

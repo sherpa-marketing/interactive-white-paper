@@ -22,6 +22,31 @@ body {
   display: none;
 }
 
+.ui.radio.checkbox input:checked~.box:after, .ui.radio.checkbox input:checked~label:after {
+  background-color: $colour-primary;
+}
+
+.title {
+  color: $colour-primary;
+  display: inline-block;
+  padding: 0 2rem;
+  position: relative;
+
+  //@media (min-width: map-get($grid-breakpoints, "md")) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 1rem;
+      height: 0.25rem;
+      display: block;
+      background: #001048;
+      margin: 0 2rem;
+    }
+  //}
+}
+
 .button {
   margin-top: 2.8rem;
   background: $colour-primary;
@@ -37,11 +62,33 @@ body {
   }
 }
 
+.journey-man {
+  &.button {
+    position: relative;
+  }
+  &::before {
+    background: url('../img/icon-journey-man.png') no-repeat;
+    background-position-x: right;
+    background-size: contain;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    content: '';
+    left: -100px;
+    top: 0;
+  }
+}
+
+.carousel-cell {
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
 .sherpa-header {
   background: transparent;
   border-bottom: 1px solid rgba(255,255,255,0.3);
   color: white;
-  padding: 35px;
+  padding: 15px 15px 10px 15px;
 
   svg {
     fill: currentColor;
@@ -66,7 +113,92 @@ body {
     @media (min-width: map-get($grid-breakpoints, "lg")) {
       font-size: 7rem !important;
     }
+  }
+}
 
+.page-lets-do-this {
+  background: url('../img/hero-back.jpg?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
+
+  color: white;
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+
+.page-sales-cycle {
+  background-color: #ffd966;
+}
+
+.page-target-audience {
+  background-color: #7030a0;
+  color: white;
+
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+.page-support-messaging {
+  background-color: #92070e;
+  color: white;
+
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+.page-marketing-platform {
+  background-color: #55f4cb;
+}
+
+.page-marketing-alignment {
+  background-color: #4472c4;
+  color: white;
+
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+
+
+.zigzag-background {
+  &::before {
+    @media (min-width: 1216px) {
+      width: 29vw;
+    }
+
+    @media (min-width: 1024px) {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/pattern-zigzag--white.svg');
+      clip-path: polygon(100% 0, 100% calc(100% - 150px), 80% calc(100% - 150px));;
+    }
   }
 }
 
@@ -99,7 +231,7 @@ body {
       top: 0;
       width: 31vw;
       height: 100%;
-      background-image: url(https://cdn2.hubspot.net/hubfs/733226/Sherpa%202018/Patterns/svg-pattern__zigzag--teal.svg?t=1527685918116);
+      background-image: url('../img/pattern-zigzag--teal.svg');
     }
   }
 
@@ -119,6 +251,69 @@ body {
       -webkit-transform: rotate(21.7deg);
       transform: rotate(21.7deg);
       background: #eee;
+    }
+  }
+}
+
+.question {
+  background-color: white;
+  position: relative;
+  color: $gray-800;
+
+  &::before {
+    content: '';
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid white;
+    position: absolute;
+    top: calc(-1.5rem + 1px);
+    left: 50%;
+  }
+
+  .button {
+    margin-top: 0;
+  }
+
+  .qn {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+      right: 2rem;
+      top: 2rem;
+      bottom: initial;
+      left: initial;
+    }
+  }
+}
+
+.answers {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 3px;
+  color: $colour-primary;
+  margin: 0 2rem;
+  font-size: 0.75rem;
+
+  .row {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .ui.form .grouped.fields .field {
+    margin: 0;
+  }
+
+  .ui.checkbox .box, .ui.checkbox label {
+    font-size: 0.75rem;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 700;
+
+    &.text-smaller {
+      font-weight: 400;
     }
   }
 }
