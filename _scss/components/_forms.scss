@@ -1,0 +1,49 @@
+.field {
+  margin-top: 0.75rem;
+  position: relative;
+  width: 100%;
+
+  label {
+    display: none;
+  }
+
+  input[type=text], input[type=email] {
+    border: 2px solid $white;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .invalid-feedback {
+    padding: 0 3px 1px 3px;
+    visibility: hidden;
+  }
+}
+
+.was-validated {
+
+  input[type=text], input[type=email] {
+    &:invalid {
+      border: 2px solid $colour-primary;
+
+      + .invalid-feedback {
+        background: $colour-primary;
+        visibility: visible;
+
+        &:after {
+          background: $colour-primary;
+          border-radius: 0.75rem;
+          content: "!";
+          font-weight: bold;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          margin-top: -1.25rem;
+          position: absolute;
+          right: 0.5rem;
+          text-align: center;
+          top: 50%;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

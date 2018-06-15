@@ -1,30 +1,32 @@
 {% if include.answers-page == true %}
-    {% assign field = include.field | append: '-a' %}
-{% else %}
     {% assign field = include.field %}
+    {% assign target = include.field | append: '-s' %}
+{% else %}
+    {% assign field = include.field | append: '-s' %}
+    {% assign target = include.field %}
 {% endif %}
 <div class="row">
-    <div class="{% if include.answers-page %}twelve{% else %}ten{% endif %} wide column">
+    <div class="{% if include.answers-page %}twelve{% else %}ten{% endif %} wide column" style="align-self: flex-start !important;">
         {{questions | raw}}
     </div>
     <div class="{% if include.answers-page %}four{% else %}three{% endif %} wide column">
         <div class="ui form">
             <div class="grouped fields">
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="y">
+                <div class="field d-inline d-md-block pr-2">
+                    <div class="ui radio checkbox" id="{{field}}-y" data-radio-sync-target="{{target}}-y">
+                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="Yes">
                         <label>Yes</label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="n">
+                <div class="field d-inline d-md-block pr-2">
+                    <div class="ui radio checkbox" id="{{field}}-n" data-radio-sync-target="{{target}}-n">
+                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="No">
                         <label>No</label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="{%if include.type == 'd' %}d{% else %}s{% endif %}">
+                <div class="field d-inline d-md-block pr-2">
+                    <div class="ui radio checkbox" id="{{field}}-s" data-radio-sync-target="{{target}}-s">
+                        <input type="radio" name="{{field}}" tabindex="0" class="hidden" value="{%if include.type == 'd' %}I don't know{% else %}Somewhat{% endif %}">
                         <label>{%if include.type == 'd' %}I don't know{% else %}Somewhat{% endif %}</label>
                     </div>
                 </div>

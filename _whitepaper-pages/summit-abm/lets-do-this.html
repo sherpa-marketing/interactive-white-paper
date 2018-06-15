@@ -12,9 +12,9 @@ classes:
     </div>
 </div>
 
-<div class="ui middle aligned stackable grid">
+<div class="ui top aligned stackable grid">
     <div class="ten wide column">
-        <div class="answers">
+        <div class="answers px-3 ml-md-5">
 
             <div class="ui top aligned padded stackable grid">
                 {% include summit-abm/sales-cycle-questions.html answers-page=true %}
@@ -27,10 +27,36 @@ classes:
         </div>
     </div>
     <div class="six wide column">
-        Get Your Personalised Report
+        <h3>Get Your Personalised Report</h3>
+        <form id="form" data-hs-guid="" data-hs-pid="733226">
+            <div class="form-fields mr-md-5">
+                <div class="field">
+                    <label for="name-input">Forename</label>
+                    <input type="text" id="name-input" name="firstname" autocomplete="firstname"
+                           placeholder="Please enter your forename" required/>
+                    <span class="invalid-feedback">Name is required</span>
+                </div>
 
+                <div class="field">
+                    <label for="email-input">Company</label>
+                    <input type="email" id="company-input" name="company" autocomplete="company"
+                           placeholder="Please enter your company name" required/>
+                    <span class="invalid-feedback">Company name is required</span>
+                </div>
+
+                <div class="field">
+                    <label for="email-input">Email</label>
+                    <input type="email" id="email-input" name="email" autocomplete="email"
+                           placeholder="Please enter your email address" required/>
+                    <span class="invalid-feedback">Please enter a valid email address</span>
+                </div>
+
+                <div class="field text-right">
+                    <a href="#" id="submit" class="button" data-hs-form="#form">Let's do this</a>
+                </div>
+            </div>
+        </form>
     </div>
-
 </div>
 
 

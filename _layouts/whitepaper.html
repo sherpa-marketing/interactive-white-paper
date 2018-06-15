@@ -59,7 +59,10 @@
 <script src="../js/sortable.min.js?cb=12"></script>
 <script src="../js/wizard.min.js?cb=12"></script>
 <script src="../js/validation.min.js?cb=12"></script>
+<script src="../js/radio-sync.min.js?cb=12"></script>
 <script src="../js/rspca-nav.min.js?cb=12"></script>
+{% if page.include-footer %}{% include {{ page.include-footer }} %}{% endif %}
+
 {% if page.ga-code and page.ga-code != "" %}
 <script>
     (function (i, s, o, g, r, a, m) {
