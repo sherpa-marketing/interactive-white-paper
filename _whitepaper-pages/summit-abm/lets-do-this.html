@@ -12,23 +12,23 @@ classes:
     </div>
 </div>
 
-<div class="ui top aligned stackable grid">
-    <div class="ten wide column">
-        <div class="answers px-3 ml-md-5">
+<form class="hide-if-submitted" id="form" data-hs-guid="93752025-c4a9-40c1-807a-ec7ae2290fe9" data-hs-pid="733226" novalidate>
+    <div class="ui top aligned stackable grid">
+        <div class="ten wide column">
+            <div class="answers px-3 ml-md-5">
 
-            <div class="ui top aligned padded stackable grid">
-                {% include summit-abm/sales-cycle-questions.html answers-page=true %}
-                {% include summit-abm/target-audience-questions.html answers-page=true %}
-                {% include summit-abm/support-messaging-questions.html answers-page=true %}
-                {% include summit-abm/marketing-platform-questions.html answers-page=true %}
-                {% include summit-abm/marketing-alignment-questions.html answers-page=true %}
+                <div class="ui top aligned padded stackable grid">
+                    {% include summit-abm/sales-cycle-questions.html answers-page=true %}
+                    {% include summit-abm/target-audience-questions.html answers-page=true %}
+                    {% include summit-abm/support-messaging-questions.html answers-page=true %}
+                    {% include summit-abm/marketing-platform-questions.html answers-page=true %}
+                    {% include summit-abm/marketing-alignment-questions.html answers-page=true %}
+                </div>
+
             </div>
-
         </div>
-    </div>
-    <div class="six wide column">
-        <h3>Get Your Personalised Report</h3>
-        <form id="form" data-hs-guid="" data-hs-pid="733226">
+        <div class="six wide column">
+            <h3>Get Your Personalised Report</h3>
             <div class="form-fields mr-md-5">
                 <div class="field">
                     <label for="name-input">Forename</label>
@@ -39,7 +39,7 @@ classes:
 
                 <div class="field">
                     <label for="email-input">Company</label>
-                    <input type="email" id="company-input" name="company" autocomplete="company"
+                    <input type="text" id="company-input" name="company" autocomplete="company"
                            placeholder="Please enter your company name" required/>
                     <span class="invalid-feedback">Company name is required</span>
                 </div>
@@ -52,10 +52,18 @@ classes:
                 </div>
 
                 <div class="field text-right">
-                    <a href="#" id="submit" class="button" data-hs-form="#form">Let's do this</a>
+                    <button type="submit" id="submit" class="button" data-hs-form="#form">Let's do this</button>
                 </div>
             </div>
-        </form>
+        </div>
+    </div>
+</form>
+
+<div class="show-if-submitted">
+    <div class="grow-1 text-center mt-5">
+        <div class="sherpa-ident"><img src="img/ident-dark-blue.svg" width="63" height="80" alt="Sherpa"></div>
+        <h1>thank you.</h1>
+        <p class="contrast-dark text-larger mt-5">Your personalised ABM readiness report will be sent to you shortly</p>
     </div>
 </div>
 

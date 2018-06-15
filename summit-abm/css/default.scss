@@ -1,8 +1,9 @@
 ---
 ---
 
-$font-family: 'Montserrat',Arial,sans-serif;
+$font-family: 'Montserrat', Arial, sans-serif;
 $colour-primary: #011748;
+$colour-error: #bb0000;
 
 @import "whitepaper";
 
@@ -38,8 +39,21 @@ body {
   }
 }
 
-.ui.radio.checkbox input:checked~.box:after, .ui.radio.checkbox input:checked~label:after {
+.ui.radio.checkbox input:checked ~ .box:after, .ui.radio.checkbox input:checked ~ label:after {
   background-color: $colour-primary;
+}
+
+.show-if-submitted {
+  display: none;
+}
+
+.submitted {
+  .show-if-submitted {
+    display: block;
+  }
+  .hide-if-submitted {
+    display: none;
+  }
 }
 
 .title {
@@ -49,17 +63,17 @@ body {
   position: relative;
 
   //@media (min-width: map-get($grid-breakpoints, "md")) {
-    &::before {
-      content: '';
-      position: absolute;
-      top: -10px;
-      left: 0;
-      width: 1rem;
-      height: 0.25rem;
-      display: block;
-      background: #001048;
-      margin: 0 2rem;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 1rem;
+    height: 0.25rem;
+    display: block;
+    background: #001048;
+    margin: 0 2rem;
+  }
   //}
 }
 
@@ -69,11 +83,47 @@ body {
   padding: 1.25em 3.12em;
   text-decoration: none;
   display: inline-block;
+  border-width: 0;
 
   &:focus,
   &:hover {
     color: #fff;
     background-color: #2daae1;
+  }
+}
+
+input[type=radio] {
+  ~ .invalid-feedback {
+    display: none;
+  }
+}
+
+.was-validated {
+  input[type=radio] {
+    &:invalid {
+      ~ .invalid-feedback {
+        background: $colour-error;
+        color: white;
+        visibility: visible;
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  input[type=text], input[type=email] {
+    &:invalid {
+      border: 2px solid $colour-error;
+      + .invalid-feedback {
+        background: $colour-error;
+
+        &:after {
+          background: $colour-error;
+          margin-top: -0.75rem;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
 
@@ -101,7 +151,7 @@ body {
 
 .sherpa-header {
   background: transparent;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   padding: 15px 15px 10px 15px;
 
@@ -138,6 +188,18 @@ body {
   background-position: center center !important;
   padding: 0 !important;
 
+  h1 {
+    color: $colour-primary !important;
+    font-size: 5.86rem;
+    letter-spacing: -0.075em;
+    line-height: 1em;
+    margin-top: 0;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 7rem !important;
+    }
+  }
+
   color: white;
   .title {
     color: white;
@@ -147,7 +209,6 @@ body {
     }
   }
 }
-
 
 .page-sales-cycle {
   background-color: #ffd966;
@@ -196,8 +257,6 @@ body {
   }
 }
 
-
-
 .zigzag-background {
   &::before {
     @media (min-width: 1216px) {
@@ -221,6 +280,7 @@ body {
 .sherpa-background-wrapper {
   height: 5.6vw;
 }
+
 .sherpa-intro-text__background {
   overflow: hidden;
   display: none;
@@ -229,7 +289,7 @@ body {
   height: 100%;
   bottom: 0;
   background: #eee;
-  clip-path: polygon(100% 100%,100% 0,100% calc( 100% - 5.5vw),0 100%);
+  clip-path: polygon(100% 100%, 100% 0, 100% calc(100% - 5.5vw), 0 100%);
 
   @media (min-width: 1024px) {
     display: block;
@@ -284,7 +344,7 @@ body {
     border-bottom: 1.5rem solid white;
     position: absolute;
     top: calc(-1.5rem + 1px);
-    left: 50%;
+    left: calc(50% - 1.5rem);
   }
 
   .button {
@@ -312,7 +372,7 @@ body {
   font-size: 0.75rem;
 
   .row {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .ui.form .grouped.fields .field {
