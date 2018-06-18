@@ -675,13 +675,26 @@ ul {
 #hex-anim {
   position: relative;
   min-height: 525px;
-  min-width: 552px;
   display: inline-block;
+
+  @media (max-width: map-get($grid-breakpoints, "xl")) {
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+    min-height: 375px;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, "lg")) {
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    min-height: 250px;
+  }
 
   @media (max-width: map-get($grid-breakpoints, "md")) {
     -webkit-transform: scale(0.5);
     -webkit-transform-origin: 0 0;
+    min-height: 250px;
   }
+
 
   .hexagon {
     position: absolute;
@@ -697,55 +710,55 @@ ul {
   &.start {
     .hexagon-150 {
       top: 170px !important;
-      left: 200px !important;
+      left: -75px !important;
     }
   }
 
   #hex-0 {
     background: #87165c;
     top: 145px;
-    left: 175px;
+    left: -100px;
   }
 
   #hex-1 {
     background: #001748;
     top: 0;
-    left: 305px;
+    left: 30px;
     transition-delay: 500ms;
   }
 
   #hex-2 {
     background: #0096cf;
     top: 165px;
-    left: 400px;
+    left: 125px;
     transition-delay: 1000ms;
   }
 
   #hex-3 {
     background: #1fa0a1;
     top: 345px;
-    left: 305px;
+    left: 30px;
     transition-delay: 1500ms;
   }
 
   #hex-4 {
     background: #fbca00;
     top: 345px;
-    left: 95px;
+    left: -175px;
     transition-delay: 2000ms;
   }
 
   #hex-5 {
     background: #ed7d31;
     top: 172px;
-    left: 0;
+    left: -275px;
     transition-delay: 2500ms;
   }
 
   #hex-6 {
     background: #70ad47;
     top: 0;
-    left: 95px;
+    left: -175px;
     transition-delay: 3000ms;
   }
 
