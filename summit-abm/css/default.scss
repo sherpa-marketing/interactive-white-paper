@@ -10,7 +10,6 @@ $colour-green: #55f4cb;
 $colour-yellow: #ffd966;
 $colour-blue: #4472c4;
 
-
 @import "whitepaper";
 
 body {
@@ -482,13 +481,13 @@ input[type=radio] {
 
     &:first-child {
       left: 0;
-      border-right: 20px solid  $colour-primary;
+      border-right: 20px solid $colour-primary;
 
     }
 
     &:last-child {
       right: 0;
-      border-left: 20px solid  $colour-primary;
+      border-left: 20px solid $colour-primary;
     }
   }
 }
@@ -533,10 +532,18 @@ ul {
 .capabilites-table {
   color: $colour-primary;
 
+  .row {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   .headers {
     background: $colour-primary;
     color: white;
     font-weight: 700;
+
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
 
     .column {
       margin-bottom: 0 !important;
@@ -571,3 +578,177 @@ ul {
   }
 
 }
+
+.hexagon-200 {
+  position: relative;
+  width: 200px;
+  height: 115.47px;
+  background-color: #64C7CC;
+  margin: 57.74px 0;
+  border-left: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  z-index: 18;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 19;
+    width: 141.42px;
+    height: 141.42px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 27.2893px;
+  }
+
+  &:before {
+    top: -70.7107px;
+    border-top: solid 2.8284px #ffffff;
+    border-right: solid 2.8284px #ffffff;
+  }
+
+  &:after {
+    bottom: -70.7107px;
+    border-bottom: solid 2.8284px #ffffff;
+    border-left: solid 2.8284px #ffffff;
+  }
+
+  > span {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+
+.hexagon-150 {
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: #64C7CC;
+  margin: 43.30px 0;
+  border-left: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 106.07px;
+    height: 106.07px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 19.9670px;
+  }
+
+  &:before {
+    top: -53.0330px;
+    border-top: solid 2.8284px #ffffff;
+    border-right: solid 2.8284px #ffffff;
+  }
+
+  &:after {
+    bottom: -53.0330px;
+    border-bottom: solid 2.8284px #ffffff;
+    border-left: solid 2.8284px #ffffff;
+  }
+
+  > span {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+
+#hex-anim {
+  position: relative;
+  min-height: 525px;
+  min-width: 552px;
+  display: inline-block;
+
+  @media (max-width: map-get($grid-breakpoints, "md")) {
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+  }
+
+  .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hexagon-150 {
+    -webkit-transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
+  }
+
+  &.start {
+    .hexagon-150 {
+      top: 170px !important;
+      left: 200px !important;
+    }
+  }
+
+  #hex-0 {
+    background: #87165c;
+    top: 145px;
+    left: 175px;
+  }
+
+  #hex-1 {
+    background: #001748;
+    top: 0;
+    left: 305px;
+    transition-delay: 500ms;
+  }
+
+  #hex-2 {
+    background: #0096cf;
+    top: 165px;
+    left: 400px;
+    transition-delay: 1000ms;
+  }
+
+  #hex-3 {
+    background: #1fa0a1;
+    top: 345px;
+    left: 305px;
+    transition-delay: 1500ms;
+  }
+
+  #hex-4 {
+    background: #fbca00;
+    top: 345px;
+    left: 95px;
+    transition-delay: 2000ms;
+  }
+
+  #hex-5 {
+    background: #ed7d31;
+    top: 172px;
+    left: 0;
+    transition-delay: 2500ms;
+  }
+
+  #hex-6 {
+    background: #70ad47;
+    top: 0;
+    left: 95px;
+    transition-delay: 3000ms;
+  }
+
+}
+
+
