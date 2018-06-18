@@ -529,3 +529,45 @@ ul {
     }
   }
 }
+
+.capabilites-table {
+  color: $colour-primary;
+
+  .headers {
+    background: $colour-primary;
+    color: white;
+    font-weight: 700;
+
+    .column {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .column:first-child {
+    font-weight: 700;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, "md")) {
+    .headers {
+      display: none !important;
+    }
+
+    .row {
+      .column:first-child {
+        font-weight: 400;
+      }
+      .column::before {
+        content: 'Description';
+        display: block;
+        font-weight: 700;
+      }
+      .column:first-child::before {
+        content: 'Touchpoint'
+      }
+      .column:last-child::before {
+        content: 'Requirements: '
+      }
+    }
+  }
+
+}
