@@ -434,9 +434,7 @@ input[type=radio] {
 }
 
 .answers {
-  background: rgba(255, 255, 255, 0.96);
-  border-radius: 3px;
-  color: $colour-primary;
+
   font-size: 0.75rem;
 
   .row {
@@ -507,5 +505,27 @@ input[type=radio] {
     position: absolute;
     top: -20px;
     right: 25px;
+  }
+}
+
+.white-bg {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 3px;
+  color: $colour-primary;
+}
+
+ul {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 0;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+    padding-bottom: 1rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
