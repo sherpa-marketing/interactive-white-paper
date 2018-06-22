@@ -137,6 +137,7 @@ input[type=radio] {
   }
 }
 
+
 .flip-card {
   color: white;
 
@@ -165,7 +166,7 @@ input[type=radio] {
     }
   }
 
-   h3 {
+  h3 {
     margin-top: 40px;
   }
   .button {
@@ -201,6 +202,46 @@ input[type=radio] {
 #flip-one-to-many {
   @include abm-flip-style($colour-yellow);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .journey-man {
   &.button {
