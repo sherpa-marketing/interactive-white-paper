@@ -477,6 +477,7 @@ input[type=radio] {
   }
 
   p {
+    display: none;
     margin: 0;
     font-weight: 700;
     font-size: 0.75rem;
@@ -802,3 +803,121 @@ ul {
 }
 
 
+body div#hs-eu-cookie-confirmation,body div#hs-eu-cookie-confirmation.can-use-gradients {
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  background: #00b7b0;
+  border: 0;
+  padding: 2rem 2.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important
+}
+
+body div#hs-eu-cookie-confirmation,body div#hs-eu-cookie-confirmation.can-use-gradients,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+  font-size: 1rem !important;
+  font-family: 'Montserrat',Arial,sans-serif !important;
+  line-height: 1.5 !important;
+  color: #fff;
+  text-shadow: none !important;
+  letter-spacing: -0.05em
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+  color: #fff !important;
+  text-decoration: underline !important
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:focus,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:hover {
+  color: #001048 !important
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 90px 0 0;
+  max-width: initial
+}
+
+@media(min-width: 768px) {
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+}
+
+@media(min-width: 768px) {
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p {
+    display:table-cell;
+    vertical-align: middle;
+    padding: 0 2.5rem !important;
+    margin: 0 !important
+  }
+
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*:first-child,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p:first-child {
+    padding-right: 0 !important
+  }
+
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*:last-child,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p:last-child {
+    padding-left: 0 !important
+  }
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+  margin: 0 !important
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
+  display: block !important;
+  border: none !important;
+  background: #fff !important;
+  color: #001048 !important;
+  border-radius: 0 !important;
+  padding: 1em 2.5rem !important;
+  margin: 0 0 10px 0 !important;
+  font-family: 'Montserrat',Arial,sans-serif !important;
+  font-size: 1rem !important;
+  text-shadow: none !important;
+  text-align: center;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  letter-spacing: -0.025em
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:hover,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:focus {
+  color: #00b7b0 !important
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button {
+  display: block !important;
+  border: none !important;
+  background: transparent !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  padding: 1em 2.5rem !important;
+  margin: 0 !important;
+  font-family: 'Montserrat',Arial,sans-serif !important;
+  font-size: 1rem !important;
+  text-shadow: none !important;
+  text-align: center;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  letter-spacing: -0.025em
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:hover,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:focus {
+  color: #00b7b0 !important;
+  background: #fff !important
+}
