@@ -2,19 +2,24 @@
   display: flex;
   flex-direction: column;
 
-  .grow { flex: 1; }
-  .grow-1 { flex: 1; }
-  .grow-2 { flex: 2; }
-  .grow-3 { flex: 3; }
-  .grow-4 { flex: 4; }
-  .grow-5 { flex: 5; }
-  .grow-6 { flex: 6; }
-  .grow-7 { flex: 7; }
-  .grow-8 { flex: 8; }
-  .grow-9 { flex: 9; }
-  .grow-10 { flex: 10; }
-  .grow-11 { flex: 11; }
-  .grow-12 { flex: 12; }
+  > * {
+    flex: 0 0 auto;
+  }
+
+  .grow { flex: 1 1 auto; }
+  .grow-0 { flex: 1 1 auto; }
+  .grow-1 { flex: 1 1 auto; }
+  .grow-2 { flex: 2 2 auto; }
+  .grow-3 { flex: 3 3 auto; }
+  .grow-4 { flex: 4 4 auto; }
+  .grow-5 { flex: 5 5 auto; }
+  .grow-6 { flex: 6 6 auto; }
+  .grow-7 { flex: 7 7 auto; }
+  .grow-8 { flex: 8 8 auto; }
+  .grow-9 { flex: 9 9 auto; }
+  .grow-10 { flex: 10 10 auto; }
+  .grow-11 { flex: 11 11 auto; }
+  .grow-12 { flex: 12 12 auto; }
 
   .center {
     display: flex;
