@@ -33,16 +33,16 @@ $colour-primary: #008720;
   @include flip-style(#407EC9, '../img/productivity.jpg?cb=1');
 }
 .button-yellow {
-  background: #F3D03E;
+  background: #009CA6;
 
   &:hover {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten(#F3D03E, 10%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten(#009CA6, 10%);
 
   }
 
   &:active,
   &:focus {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken(#F3D03E, 10%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken(#009CA6, 10%);
 
   }
 }
@@ -86,6 +86,7 @@ $colour-primary: #008720;
 
 .quote-color {
   color:#407EC9;
+
 }
 .tabs {
   .column {
@@ -94,4 +95,44 @@ $colour-primary: #008720;
 
     }
   }
+}
+
+.ui.tiny.header {
+  font-size: 1.1em;
+}
+
+p {
+  font-size:1.1em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h1{
+  text-align: left;
+
+  .k3cover {
+    text-align:center;
+  }
+
+}
+
+h3{
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.ui.list>.item .header {
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
+.ui.list>.item .description {
+   font-size: 1.2rem;
+  line-height: normal;
+}
+
+.quote-background {
+  background-color: #adb5bd;
 }
