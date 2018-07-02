@@ -147,7 +147,7 @@ input[type=radio] {
     padding-right: 1rem;
 
     @media (min-width: map-get($grid-breakpoints, "sm")) {
-      min-height: 27.5vw;
+      min-height: 24vw;
     }
 
     @media (min-width: map-get($grid-breakpoints, "sm")) and (max-height: calc(170px / 35 * 100)) {
@@ -985,4 +985,13 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-d
 body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:hover,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:focus {
   color: #00b7b0 !important;
   background: #fff !important
+}
+
+.teeny-tiny{
+  font-size:12px;
+}
+
+.row{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
