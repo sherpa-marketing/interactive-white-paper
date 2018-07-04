@@ -37,5 +37,7 @@ iframe {
 
 .lp-code,
 .lp-positioned-content {
-  position: unset;
+  width: unset !important;
+  height: unset !important;
+  position: unset !important;
 }
