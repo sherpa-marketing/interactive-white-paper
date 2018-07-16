@@ -136,3 +136,7 @@ h3{
 .quote-background {
   background-color: #adb5bd;
 }
+
+.ui[class*="eight column"].grid>.column:not(.row), .ui[class*="eight column"].grid>.row>.column {
+  width: 25%;
+}
