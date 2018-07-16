@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Simpler-3-1" sketch:type="MSArtboardGroup" transform="translate(-611.000000, -589.000000)">
+            <g id="X3" sketch:type="MSLayerGroup" transform="translate(335.000000, 469.000000)">
+                <g id="Imported-Layers-Copy-2-+-Rectangle-879" sketch:type="MSShapeGroup">
+                    <g id="Line-Copy-15-+-Oval-562-+-Imported-Layers-Copy-Copy" transform="translate(257.835983, 100.649455)">
+                        <g id="Group" transform="translate(18.932501, 19.613723)">
+                            <path d="M36.27,29.64 C36.27,29.96292 36.008115,30.225 35.685,30.225 L23.4,30.225 L23.4,28.08 L32.37,28.08 L32.37,26.13 L23.4,26.13 L23.4,24.765 L32.37,24.765 L32.37,22.815 L23.4,22.815 L23.4,9.75 L35.685,9.75 C36.008115,9.75 36.27,10.011885 36.27,10.335 L36.27,29.64 L36.27,29.64 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M23.4,7.02 L23.4,8.58 L37.635,8.58 L37.635,25.74 L38.415,25.74 C38.738115,25.74 39,25.478115 39,25.155 L39,7.605 C39,7.281885 38.738115,7.02 38.415,7.02 L23.4,7.02 L23.4,7.02 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M20.28,16.77 C20.28,19.462755 22.462245,21.645 25.155,21.645 C27.847755,21.645 30.03,19.462755 30.03,16.77 L25.155,16.77 L25.155,11.895 C22.462245,11.895 20.28,14.077635 20.28,16.77 L20.28,16.77 Z" id="Shape" fill="#00DC00"></path>
+                            <path d="M25.935,15.99 L30.81,15.99 C30.81,13.297635 28.627755,11.115 25.935,11.115 L25.935,15.99 L25.935,15.99 Z" id="Shape" fill="#00DC00"></path>
+                            <path d="M0,3.8025 L22.425,0 L22.425,37.44 L0,33.54 L0,3.8025 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M7.995,12.511688 C11.862435,12.219188 15.3075,11.439188 15.405,16.411688 C15.340065,21.124253 11.082435,20.929253 10.2375,20.896688 L10.2375,25.284188 L7.995,25.186688 L7.995,12.511688 L7.995,12.511688 Z M10.2375,18.654188 C10.2375,18.654188 12.72375,19.012208 12.7725,16.606688 C12.82125,14.201168 10.2375,14.754188 10.2375,14.754188 L10.2375,18.654188 L10.2375,18.654188 Z" id="Shape" fill="#00DC00"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

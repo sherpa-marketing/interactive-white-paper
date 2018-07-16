@@ -1,0 +1,43 @@
+---
+---
+
+body {
+  padding: 0;
+}
+
+iframe {
+  height: calc(100% - 0px);
+  width: calc(100% - 0px);
+  top: 0;
+  left: 0;
+  border: 0;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  iframe {
+    top: 1.5rem;
+    left: 1.5rem;
+    height: calc(100% - 3rem);
+    width: calc(100% - 3rem);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  }
+}
+
+.header-container,
+.nav-primary,
+.main-footer {
+  display: none;
+}
+
+.lp-code,
+.lp-positioned-content {
+  width: unset !important;
+  height: unset !important;
+  position: unset !important;
+}
