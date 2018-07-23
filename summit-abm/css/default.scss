@@ -328,6 +328,38 @@ input[type=radio] {
   }
 }
 
+.page-target-audience-1 {
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
+
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+.page-sales-cycle-1 {
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
+
+  .title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
 .page-support-messaging {
   background-color: #4472c4;
   color: white;
