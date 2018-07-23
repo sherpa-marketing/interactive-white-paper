@@ -58,10 +58,10 @@ $colour-primary: #008720;
 }
 
 .flickity-button {
-  background: rgba( #6ea246, .2 );
+  background: #f04b2d;
 
   &:hover {
-    background: #6ea246;
+    background: #f04b2d;
   }
 
 
@@ -138,7 +138,7 @@ h3{
 }
 
 .ui[class*="eight column"].grid>.column:not(.row), .ui[class*="eight column"].grid>.row>.column {
-  width: 25%;
+  width: 40%;
 }
 
 .logos-container img {
