@@ -18,80 +18,80 @@ $colour-primary: #008720;
 }
 
 #flip-growth-man {
-  @include flip-style(#FC4C02, '../img/growth.jpg?cb=1');
+  @include flip-style(#971b1f, '../img/growth.jpg?cb=1');
 }
 
 #flip-digital-man {
-  @include flip-style(#298FC2, '../img/digital.jpg?cb=1');
+  @include flip-style(#7c7c7c, '../img/digital.jpg?cb=1');
 }
 
 #flip-flexibility-man {
-  @include flip-style(#FFA300, '../img/flexibility.jpg?cb=1');
+  @include flip-style(#5985b5, '../img/flexibility.jpg?cb=1');
 }
 
 #flip-productivity-man {
-  @include flip-style(#407EC9, '../img/productivity.jpg?cb=1');
+  @include flip-style(#285453, '../img/productivity.jpg?cb=1');
 }
 .button-yellow {
-  background: #009CA6;
+  background: #971b1f;
 
   &:hover {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten(#009CA6, 10%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.15)), lighten(#971b1f, 10%);
 
   }
 
   &:active,
   &:focus {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken(#009CA6, 10%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.15)), darken(#971b1f, 10%);
 
   }
 }
 
 .flickity-page-dots .dot {
-  background: #009CA6;
-  border: 2px solid #009CA6;
+  background: #000000;
+  border: 2px solid #000000;
 }
 
 .flickity-page-dots .dot.is-selected {
   background: white;
-  border: 2px solid #009CA6;
+  border: 2px solid #000000;
 }
 
 .flickity-button {
-  background: rgba( #009CA6, .2 );
+  background: rgba( #000000, .2 );
 
   &:hover {
-    background: #009CA6;
+    background: #000000;
   }
 
 
   &:focus {
     outline: none;
-    background: #009CA6;
-    box-shadow: 0 0 0 0 #009CA6;
+    background: #000000;
+    box-shadow: 0 0 0 0 #000000;
   }
 }
 
 .callout {
-  background: #2a3332 !important;
-  color: #2a3332;
+  background: #971b1f !important;
+  color: #971b1f;
 
 }
 
 .title-color {
-  color:#3F4444;
+  color:#000000;
 
 
 }
 
 .quote-color {
-  color:#407EC9;
+  color:#971b1f;
 
 }
 .tabs {
   .column {
     &.active {
-      background: #FFA300;
+      background: #971b1f;
 
     }
   }
