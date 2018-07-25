@@ -5,12 +5,11 @@ classes: growable
 ---
 
 <div class="grow-1 mb-5 zigzag-background">
+
     <div class="ui center aligned stackable relaxed grid">
         <div class="stretched row">
             <div class="eleven wide column text-left" xdata-animation="slideInDown">
-                <h3 class="title mt-5">
-                    do you have the marketing platform capabilities to target your audience with custom messages?
-                </h3>
+
 
             </div>
 
@@ -18,8 +17,8 @@ classes: growable
                 <div class="callout delay-100ms growable grow bottom mt-2 mt-md-0 mb-2" data-animation="flipInX">
                     <div>
                         <h5 class="m-4"
-                            style="background-color:#011748; padding-top: 0px !important; min-height: 0px; color:#FFA300;">
-                            <span>More than 60% of companies are planning on investing in technology related to ABM.*</span>
+                            style="background-color:#0096cf; padding-top: 0px !important; min-height: 0px; color:#FFFFFF;">
+                            <span>87% of B2B marketers agreeing that ABM delivers higher ROI.*</span>
                         </h5>
                     </div>
                 </div>
@@ -27,62 +26,10 @@ classes: growable
         </div>
     </div>
 
+    <div class="constrained-container">
 
-    <div class="mt-5 mx-1 mx-md-5">
-        <div class="ui stackable vertically divided grid capabilites-table">
-            <div class="row headers">
-                <div class="three wide column">Touchpoint</div>
-                <div class="eight wide column">Details</div>
-                <div class="five wide column">Requirements</div>
-            </div>
-
-            <div class="row delay-100ms" data-animation="pulse">
-                <div class="three wide column">Dynamic Content</div>
-                <div class="eight wide column">Dynamically placed relevant content on website based on audience recognition</div>
-                <div class="five wide column">Marketing platform which allows personalised content</div>
-            </div>
-
-            <div class="row delay-200ms" data-animation="pulse">
-                <div class="three wide column">Content Marketing</div>
-                <div class="eight wide column">Placing bespoke content on publishing and other platforms as a lead generating activity</div>
-                <div class="five wide column">Requirement to input leads into CRM</div>
-            </div>
-
-            <div class="row delay-300ms" data-animation="pulse">
-                <div class="three wide column">Social Advertising</div>
-                <div class="eight wide column">LinkedIn based content specifically addressing named accounts</div>
-                <div class="five wide column">Access to LinkedIn, Twitter, Facebook &amp; Google AdWords</div>
-            </div>
-
-            <div class="row delay-400ms" data-animation="pulse">
-                <div class="three wide column">IP Advertising</div>
-                <div class="eight wide column">Serving advertising across the internet based on users IP address (linked to company)</div>
-                <div class="five wide column">Requirement to place tracking codes on site</div>
-            </div>
-
-            <div class="row delay-500ms" data-animation="pulse">
-                <div class="three wide column">Remarketing</div>
-                <div class="eight wide column">Serving specific messaging to audience who have viewed specific content</div>
-                <div class="five wide column">Requirement to place tracking codes on site</div>
-            </div>
-
-            <div class="row delay-600ms" data-animation="pulse">
-                <div class="three wide column">Email campaign</div>
-                <div class="eight wide column">Highly bespoke and personalised email campaign to account decision-makers</div>
-                <div class="five wide column">Requirement for agency-accessible company email addresses</div>
-            </div>
-
-            <div class="row delay-700ms" data-animation="pulse">
-                <div class="three wide column">Telephone Engagement</div>
-                <div class="eight wide column">Telephone based contact with the audience to deliver content via personalised content syndication</div>
-                <div class="five wide column">Requirement to follow up on leads</div>
-            </div>
-
-            <div class="row delay-800ms" data-animation="pulse">
-                <div class="three wide column">Direct Mail</div>
-                <div class="eight wide column">Bespoke/ personalised direct mail sent to physical address of target person</div>
-                <div class="five wide column">None</div>
-            </div>
+        <div><img class="fluid" src="img/platforms.png">
+            {% include sherpa-abm/marketing-platform-questions.html %}
         </div>
 
     </div>
@@ -90,9 +37,7 @@ classes: growable
 
 <div class="question p-3">
     <div class="qn"></div>
-    <div class="ui bottom aligned padded stackable grid">
-        {% include sherpa-abm/marketing-platform-questions.html %}
-    </div><div><p class="teeny-tiny">*SiriusDecisions' “State of Account-Based Marketing”</p></div>
-</div>
 
+    <div><p class="teeny-tiny">*SiriusDecisions' “State of Account-Based Marketing”</</p></div>
+</div>
 

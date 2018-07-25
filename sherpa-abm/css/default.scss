@@ -20,6 +20,29 @@ body {
   color: gray;
 }
 
+.constrained-container{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .right.aligned {
+    text-align: right;
+  }
+  h3{
+    font-weight:400;
+    font-size:1.5rem;
+    margin-bottom:3rem;
+    color:#FFffff;
+  }
+
+  h2 {
+    color: white;
+  }
+  }
+
+
+
+
 .text-primary {
   color: $colour-primary;
 }
@@ -50,6 +73,11 @@ body {
 
 .ui.radio.checkbox input:checked ~ .box:after, .ui.radio.checkbox input:checked ~ label:after {
   background-color: $colour-primary;
+}
+
+.ui.checkbox label {
+  color: white;
+  font-size:1.2rem;
 }
 
 .show-if-submitted {
@@ -87,16 +115,16 @@ body {
 }
 
 .button {
-  background: $colour-blue;
+  background: #0096cf;
   color: #fff;
   padding: 1.25em 3.12em;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid $colour-blue;
+  border: 1px solid #0096cf;
 
   &:focus,
   &:hover {
-    color: $colour-blue;
+    color: #0096cf;
     background-color: #ffffff;
 
   }
@@ -207,7 +235,7 @@ input[type=radio] {
 
 
 .callout {
-  background: $colour-primary !important;
+  background: #0096cf !important;
   color: $gray-800;
   max-width: 350px !important;
   margin-left: auto !important;
@@ -224,7 +252,7 @@ input[type=radio] {
     position: relative;
   }
   &::before {
-    background: url('../img/icon-journey-man.png') no-repeat;
+    background: url('../img/runngingman-2.png') no-repeat;
     background-position-x: right;
     background-size: contain;
     width: 100px;
@@ -303,8 +331,11 @@ input[type=radio] {
 }
 
 .page-sales-cycle {
-  background-color: #4472c4;
-  color: white;
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
 
   .title {
     color: white;
@@ -316,19 +347,6 @@ input[type=radio] {
 }
 
 .page-target-audience {
-  background-color: #4472c4;
-  color: white;
-
-  .title {
-    color: white;
-
-    &::before {
-      background: white;
-    }
-  }
-}
-
-.page-target-audience-1 {
   background: url('../img/dark-blue.png?cb=1') no-repeat !important;
   background-color: #0096cf;
   background-size: cover !important;
@@ -344,25 +362,15 @@ input[type=radio] {
   }
 }
 
-.page-sales-cycle-1 {
-  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
-  background-color: #0096cf;
-  background-size: cover !important;
-  background-position: center center !important;
-  padding: 0 !important;
 
-  .title {
-    color: white;
 
-    &::before {
-      background: white;
-    }
-  }
-}
 
 .page-support-messaging {
-  background-color: #4472c4;
-  color: white;
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
 
   .title {
     color: white;
@@ -374,8 +382,11 @@ input[type=radio] {
 }
 
 .page-marketing-platform {
-  background-color: #4472c4;
-  color: white;
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
 
   .title {
     color: white;
@@ -384,13 +395,14 @@ input[type=radio] {
       background: white;
     }
   }
-
-
 }
 
 .page-marketing-alignment {
-  background-color: #4472c4;
-  color: white;
+  background: url('../img/dark-blue.png?cb=1') no-repeat !important;
+  background-color: #0096cf;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 0 !important;
 
   .title {
     color: white;
@@ -535,6 +547,24 @@ input[type=radio] {
   .ui.checkbox .box, .ui.checkbox label {
     font-size: 0.75rem;
   }
+  h3 {
+    display: none;
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.75rem;
+
+    &.text-smaller {
+      font-weight: 400;
+      font-size: 0.3rem;
+    }
+  }
+  h2{
+    font-size:1.2rem;
+    font-weight:400;
+    color:#FFffff;
+  }
+
+
 
   p {
     display: none;
@@ -609,6 +639,12 @@ input[type=radio] {
   background: rgba(255, 255, 255, 0.96);
   border-radius: 3px;
   color: $colour-primary;
+}
+
+.blue-bg {
+  background: rgba(1, 23, 72, 0.96);
+  border-radius: 3px;
+  color: #FFffff;
 }
 
 ul {

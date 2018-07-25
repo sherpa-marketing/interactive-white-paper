@@ -9,9 +9,7 @@ classes: growable
     <div class="ui center aligned stackable relaxed grid">
         <div class="stretched row">
             <div class="eleven wide column text-left" xdata-animation="slideInDown">
-                <h3 class="title mt-5">
-                    do you have a clearly defined target audience and persona?
-                </h3>
+
 
             </div>
 
@@ -19,7 +17,7 @@ classes: growable
                 <div class="callout delay-100ms growable grow bottom mt-2 mt-md-0 mb-2" data-animation="flipInX">
                     <div>
                         <h5 class="m-4"
-                            style="background-color:#011748; padding-top: 0px !important; min-height: 0px; color:#FFA300;">
+                            style="background-color:#0096cf; padding-top: 0px !important; min-height: 0px; color:#FFFFFF;">
                             <span>Misalignment between marketing and sales costs $1 trillion a year.*</span>
                         </h5>
                     </div>
@@ -28,47 +26,17 @@ classes: growable
         </div>
     </div>
 
+    <div class="constrained-container">
 
-    <div class="ui stackable two column grid">
-        <div class="column">
-            <div class="xwhite-bg mx-3 mb-md-5 ml-md-5">
-
-                <p>Establishing target accounts for an ABM campaign:</p>
-                <h5>DO:</h5>
-                <ul>
-                    <li class="delay-100ms" data-animation="flipInX"><i class="check icon"></i> Choose accounts that represent ones you have easily sold to
-                        in the past</li>
-                    <li class="delay-200ms" data-animation="flipInX"><i class="check icon"></i> Make use of intent data (budget-allowing) to prioritise those
-                        prospects that are already open to purchase a product like
-                        yours</li>
-                    <li class="delay-300ms" data-animation="flipInX"><i class="check icon"></i>Include criteria such as tech stack if your solution holds
-                        up well against legacy products</li>
-                </ul>
-
-                <h5>DON'T:</h5>
-                <ul>
-                    <li class="delay-400ms" data-animation="flipInX"><i class="times icon"></i>Try to appeal to too many accounts – it will be hard to
-                        prioritise</li>
-                    <li class="delay-500ms" data-animation="flipInX"><i class="times icon"></i> Include accounts you’ve previously engaged with but had no
-                        success (particularly for ABM pilot programmes)</li>
-                </ul>
-            </div>
+        <div><img class="fluid" src="img/audience.png">
+            {% include sherpa-abm/target-audience-questions.html %}
         </div>
 
-        <div class="middle aligned column">
-            <div class="mx-0 mx-md-5">
-                <img class="ui fluid image px-3 pr-md-5" src="/sherpa-abm/img/target-accounts.png" alt="Marketing and sales">
-            </div>
-        </div>
     </div>
 </div>
 
 <div class="question p-3">
     <div class="qn"></div>
-    <div class="ui bottom aligned padded stackable grid">
-        {% include sherpa-abm/target-audience-questions.html %}
-    </div>
-    <div><p class="teeny-tiny">*HubSpot. Updated 2017 </p></div>
+
+    <div><p class="teeny-tiny">*HubSpot. Updated 2017</p></div>
 </div>
-
-
