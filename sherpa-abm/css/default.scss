@@ -1019,3 +1019,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-d
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
+
+.ui.checkbox input:active~label {
+  color: white;
+}
