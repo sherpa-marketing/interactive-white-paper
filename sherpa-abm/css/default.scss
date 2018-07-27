@@ -20,28 +20,27 @@ body {
   color: gray;
 }
 
-.constrained-container{
+.constrained-container {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   .right.aligned {
     text-align: right;
   }
-  h3{
-    font-weight:400;
-    font-size:1.5rem;
-    margin-bottom:3rem;
-    color:#FFffff;
+  h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: #FFffff;
   }
 
   h2 {
     color: white;
   }
-  }
-
-
-
+}
 
 .text-primary {
   color: $colour-primary;
@@ -57,6 +56,19 @@ body {
 
 .flickity-page-dots .dot {
   mix-blend-mode: difference;
+}
+
+.flickity-button {
+  background: rgba(255, 255, 255, 0);
+
+  &:focus {
+    box-shadow: 0 0 0 5px #fff;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
 }
 
 .field {
@@ -77,7 +89,7 @@ body {
 
 .ui.checkbox label {
   color: white;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
 .show-if-submitted {
@@ -165,7 +177,6 @@ input[type=radio] {
   }
 }
 
-
 .flip-card {
   color: white;
 
@@ -233,7 +244,6 @@ input[type=radio] {
   @include abm-flip-style($colour-yellow);
 }
 
-
 .callout {
   background: #0096cf !important;
   color: $gray-800;
@@ -246,8 +256,9 @@ input[type=radio] {
   margin-bottom: 1rem !important;
 }
 
-
 .journey-man {
+  margin-top: 3rem;
+
   &.button {
     position: relative;
   }
@@ -278,6 +289,10 @@ input[type=radio] {
   svg {
     fill: currentColor;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .page-cover {
@@ -290,7 +305,7 @@ input[type=radio] {
 
   h1 {
     color: #fff;
-    font-size: 5.86rem;
+    font-size: 3rem;
     letter-spacing: -0.075em;
     line-height: 1em;
     margin-top: 0;
@@ -362,9 +377,6 @@ input[type=radio] {
   }
 }
 
-
-
-
 .page-support-messaging {
   background: url('../img/dark-blue.png?cb=1') no-repeat !important;
   background-color: #0096cf;
@@ -426,7 +438,7 @@ input[type=radio] {
       top: 0;
       width: 100%;
       height: 100%;
-//      background-image: url('../img/pattern-zigzag--white.svg');
+      //      background-image: url('../img/pattern-zigzag--white.svg');
       //clip-path: polygon(100% 0, 100% calc(100% - 150px), 80% calc(100% - 150px));;
       -webkit-clip-path: polygon(100% 0, 100% 100%, 80% 100%);
       clip-path: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3CclipPath id="p" clipPathUnits="objectBoundingBox"%3E%3Cpolygon points="1 0, 1 1, 0.8 1" /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E#p');
@@ -558,13 +570,11 @@ input[type=radio] {
       font-size: 0.3rem;
     }
   }
-  h2{
-    font-size:1.2rem;
-    font-weight:400;
-    color:#FFffff;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FFffff;
   }
-
-
 
   p {
     display: none;
@@ -602,7 +612,6 @@ input[type=radio] {
     &:first-child {
       left: 0;
       border-right: 20px solid white;
-
 
     }
 
@@ -830,7 +839,6 @@ ul {
     min-height: 250px;
   }
 
-
   .hexagon {
     position: absolute;
     top: 0;
@@ -899,8 +907,7 @@ ul {
 
 }
 
-
-body div#hs-eu-cookie-confirmation,body div#hs-eu-cookie-confirmation.can-use-gradients {
+body div#hs-eu-cookie-confirmation, body div#hs-eu-cookie-confirmation.can-use-gradients {
   position: fixed;
   bottom: 0;
   top: auto;
@@ -913,9 +920,9 @@ body div#hs-eu-cookie-confirmation,body div#hs-eu-cookie-confirmation.can-use-gr
   box-shadow: none !important
 }
 
-body div#hs-eu-cookie-confirmation,body div#hs-eu-cookie-confirmation.can-use-gradients,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+body div#hs-eu-cookie-confirmation, body div#hs-eu-cookie-confirmation.can-use-gradients, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
   font-size: 1rem !important;
-  font-family: 'Montserrat',Arial,sans-serif !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
   line-height: 1.5 !important;
   color: #fff;
   text-shadow: none !important;
@@ -927,7 +934,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
   text-decoration: underline !important
 }
 
-body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:focus,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:hover {
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:focus, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a:hover {
   color: #001048 !important
 }
 
@@ -942,7 +949,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
 
 @media(min-width: 768px) {
   body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
-    display:-webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -956,18 +963,18 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
 }
 
 @media(min-width: 768px) {
-  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p {
-    display:table-cell;
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > *, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > p {
+    display: table-cell;
     vertical-align: middle;
     padding: 0 2.5rem !important;
     margin: 0 !important
   }
 
-  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*:first-child,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p:first-child {
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > *:first-child, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > p:first-child {
     padding-right: 0 !important
   }
 
-  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>*:last-child,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner>p:last-child {
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > *:last-child, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner > p:last-child {
     padding-left: 0 !important
   }
 }
@@ -984,7 +991,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-c
   border-radius: 0 !important;
   padding: 1em 2.5rem !important;
   margin: 0 0 10px 0 !important;
-  font-family: 'Montserrat',Arial,sans-serif !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
   font-size: 1rem !important;
   text-shadow: none !important;
   text-align: center;
@@ -993,7 +1000,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-c
   letter-spacing: -0.025em
 }
 
-body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:hover,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:focus {
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:hover, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:focus {
   color: #00b7b0 !important
 }
 
@@ -1005,7 +1012,7 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-d
   border-radius: 0 !important;
   padding: 1em 2.5rem !important;
   margin: 0 !important;
-  font-family: 'Montserrat',Arial,sans-serif !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
   font-size: 1rem !important;
   text-shadow: none !important;
   text-align: center;
@@ -1014,16 +1021,21 @@ body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-d
   letter-spacing: -0.025em
 }
 
-body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:hover,body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:focus {
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:hover, body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:focus {
   color: #00b7b0 !important;
   background: #fff !important
 }
 
-.teeny-tiny{
-  font-size:12px;
+.teeny-tiny {
+  font-size: 12px;
 }
 
-.row{
+.row {
   padding-top: 0rem;
   padding-bottom: 0rem;
+}
+
+.ui.checkbox input:focus~label,
+.ui.checkbox input:active~label {
+  color: white;
 }
