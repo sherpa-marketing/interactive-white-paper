@@ -13,6 +13,12 @@ $(function () {
                 },
                 "skipValidation": false
             };
+            
+            for (var i = data.fields.length - 1; i >= 0; --i) {
+                if (data.fields[i].name.indexOf('_') === 0) {
+                    data.fields.splice(i, 1);
+                }
+            }
 
             $.ajax({
                 type: 'POST',
