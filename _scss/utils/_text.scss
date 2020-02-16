@@ -85,6 +85,10 @@ h5 {
 
 .text-smaller { font-size: 0.8rem; }
 .text-larger { font-size: 1.2rem; }
+
+.text-right { text-align: right; }
+.text-bold { font-weight: 700; }
+
 // Misc
 
 .text-hide {
@@ -96,4 +100,8 @@ h5 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.balance-text {
+  text-wrap: balance;  /* Apply (proposed) CSS style */
 }
