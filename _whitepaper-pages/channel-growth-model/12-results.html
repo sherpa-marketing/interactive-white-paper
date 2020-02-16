@@ -6,12 +6,64 @@ classes:
 
 <div class="stripes"></div>
 
-{% include channel-growth-model/tabs.html completed="7" %}
-
 <div class="text-left constrained-container px-3 py-5">
-    <div class="sherpa-ident"><img src="https://cdn2.hubspot.net/hubfs/733226/ident_white.png" width="86" height="109" alt="Sherpa"></div>
+    <div class="sherpa-ident" style="position:absolute"><img src="https://cdn2.hubspot.net/hubfs/733226/ident_white.png" width="86" height="109" alt="Sherpa"></div>
+    <div class="p-5 m-5 mx-auto" style="max-width: 500px">
+        <canvas id="chart" width="400" height="400"></canvas>
+    </div>
 </div>
 
+<script>
+    $(function() {
+        var data = {
+            datasets: [
+                {
+                    data: [10, 10, 10, 10, 10, 10, 10],
+                    backgroundColor: ['#001048', '#001048', '#9e005f', '#001048', '#001048', '#001048']
+                },
+                {
+                    data: [10, 10, 10, 10, 10, 10, 10],
+                    backgroundColor: ['#001048', '#9e005f', '#9e005f', '#001048', '#001048', '#001048']
+                },
+                {
+                    data: [10, 10, 10, 10, 10, 10, 10],
+                    backgroundColor: ['#001048', '#9e005f', '#9e005f', '#001048', '#9e005f', '#001048']
+                },
+                {
+                    data: [10, 10, 10, 10, 10, 10, 10],
+                    backgroundColor: ['#001048', '#9e005f', '#9e005f', '#9e005f', '#9e005f', '#9e005f']
+                },
+                {
+                    data: [10, 10, 10, 10, 10, 10, 10],
+                    backgroundColor: ['#9e005f', '#9e005f', '#9e005f', '#9e005f', '#9e005f', '#9e005f']
+                }],
+
+            // These labels appear in the legend and in the tooltips when hovering different arcs
+            labels: [
+                'plan',
+                'resource',
+                'recruit',
+                'enable',
+                'engage',
+                'grow',
+                'measure'
+            ]
+        };
+
+        var options = {
+            cutoutPercentage: 20,
+            legend: {
+                display: false
+            }
+        };
+
+        var chart = new Chart($('#chart'), {
+            type: 'doughnut',
+            data: data,
+            options: options
+        });
+    });
+</script>
 
 
 
