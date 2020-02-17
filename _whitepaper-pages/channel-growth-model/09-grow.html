@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Grow</h1>
 
     <p>
-        thanks Pascale Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+        thanks <span data-value-source="name-input"></span> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com.
     </p>
@@ -23,69 +23,15 @@ classes:
     </p>
 
     <div class="form-fields ui three column stackable grid">
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lead Pass-over From Vendor To Partner
-                </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Demand Generation Programmes</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Channel Account-based Marketing Programmes</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Ad hoc Partner Marketing Funds</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Developed MDF Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Tiered Support Based on Value-Add</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Incentives Strategy</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Marketplace</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="grow" value="Lead Pass-over From Vendor To Partner" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Partner Demand Generation Programmes" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Channel Account-based Marketing Programmes" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Ad hoc Partner Marketing Funds" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Developed MDF Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Tiered Support Based on Value-Add" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Partner Incentives Strategy" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="grow" value="Marketplace" score="0.5" %}
     </div>
 
     <div class="buttons text-right">

@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Plan</h1>
 
     <p>
-        Hi Pascale
+        Hi <span data-value-source="name-input"></span>
     </p>
     <p>
         Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -24,69 +24,15 @@ classes:
         Select all applicable.
     </p>
     <div class="form-fields ui three column stackable grid">
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Defined Partner Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Cross-business Channel Alignment</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Annualised Partner Business Plan</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Multi-tiered Partner Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Competency / Coverage Whitespace Analysis</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Commissioned Research Into Market Opportunities</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Channel Revenue Goals And Budgets</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Channel Revenue Goals</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="plan" value="Defined Partner Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Cross-business Channel Alignment" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Annualised Partner Business Plan" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Multi-tiered Partner Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Partner Competency / Coverage Whitespace Analysis" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Commissioned Research Into Market Opportunities" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Channel Revenue Goals And Budgets" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="plan" value="Channel Revenue Goals" score="0.5" %}
     </div>
 
     <div class="buttons text-right">

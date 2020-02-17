@@ -5,6 +5,15 @@ $(function() {
         $carousel.flickity('next');
     });
 
+    $("[data-scrollsnap]").click(function() {
+        var index = $(this).data('scrollsnap');
+        $carousel.flickity('select', index, false, false);
+    });
+
+    $('data.scrollsnap-next').on( 'click', function() {
+        $carousel.flickity('next');
+    });
+
     $carousel.on('ready.flickity', function( event, index ) {
         setTimeout(function() {
             var flick = $carousel.data('flickity');

@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Enable</h1>
 
     <p>
-        thanks Pascale Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+        thanks <span data-value-source="name-input"></span> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com.
     </p>
@@ -23,69 +23,15 @@ classes:
     </p>
 
     <div class="form-fields ui three column stackable grid">
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Co-selling Model</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Sales Enablement Training & Material</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Annual Sales & Product Training & Certification</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer
-                </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Concierge Services For Marketing</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Persona-based Communication Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Self-service Vendor Collateral</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Education Programme</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="enable" value="Co-selling Model" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Sales Enablement Training & Material" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Annual Sales & Product Training & Certification" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Concierge Services For Marketing" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Partner Persona-based Communication Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Self-service Vendor Collateral" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="enable" value="Partner Education Programme" score="0.5" %}
     </div>
 
     <div class="buttons text-right">

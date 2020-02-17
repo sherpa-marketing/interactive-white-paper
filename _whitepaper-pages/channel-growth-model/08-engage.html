@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Engage</h1>
 
     <p>
-        thanks Pascale Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+        thanks <span data-value-source="name-input"></span> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com.
     </p>
@@ -23,69 +23,15 @@ classes:
     </p>
 
     <div class="form-fields ui three column stackable grid">
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Managed Through Channel Account Manager</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Communications</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Persona-based Communication Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer
-                </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Relationship Management Programme</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Engagement Strategy</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Demand Centre</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">To-Partner Marketing</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Managed Through Channel Account Manager" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Communications" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Persona-based Communication Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Relationship Management Programme" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Engagement Strategy" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="Partner Demand Centre" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="engage" value="To-Partner Marketing" score="0.5" %}
     </div>
 
     <div class="buttons text-right">

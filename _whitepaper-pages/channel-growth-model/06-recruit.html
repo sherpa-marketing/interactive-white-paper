@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Recruit</h1>
 
     <p>
-        thanks Pascale Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+        thanks <span data-value-source="name-input"></span> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com.
     </p>
@@ -23,69 +23,15 @@ classes:
     </p>
 
     <div class="form-fields ui three column stackable grid">
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Target Partner Profiling</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Recruitment Campaigns & Programmes</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Recruitment Targets</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer
-                </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner Qualification Requirements</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Partner-based Marketing (PBM)</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Resourced Entirely Through Disti / Master Agent </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">GSI Growth Programmes</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="recruit" value="Target Partner Profiling" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Recruitment Campaigns & Programmes" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Partner Recruitment Targets" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Partner Qualification Requirements" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Partner-based Marketing (PBM)" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="Resourced Entirely Through Disti / Master Agent " score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="recruit" value="GSI Growth Programmes" score="0.5" %}
     </div>
 
     <div class="buttons text-right">

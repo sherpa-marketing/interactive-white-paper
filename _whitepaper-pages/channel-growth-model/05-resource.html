@@ -13,7 +13,7 @@ classes:
     <h1 class="text-white contrast-dark">Resource</h1>
 
     <p>
-        so Pascale, Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+        so <span data-value-source="name-input"></span>, Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
         nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com.
     </p>
 
@@ -22,69 +22,15 @@ classes:
     </p>
 
     <div class="form-fields ui three column stackable grid">
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">No Dedicated Channel Heads</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Specialist Agency Support</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">2-tier or 3-tier Channel Model</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Lorem ipsum dolor sit amet cons ectetuer
-                </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Specialist Agency Support With Embedded Personnel</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Global And Regional Resourcing In Marketing And Sales</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Senior VP of Channel Layer reporting to C-Suite</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Resourced Entirely Through Disti / Master Agent</label>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox">
-                <label class="balance-text">Major Regional Resourcing</label>
-            </div>
-        </div>
+        {% include channel-growth-model/checkbox.html name="resource" value="No Dedicated Channel Heads" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Specialist Agency Support" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="2-tier or 3-tier Channel Model" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Lorem ipsum dolor sit amet cons ectetuer" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Specialist Agency Support With Embedded Personnel" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Global And Regional Resourcing In Marketing And Sales" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Senior VP of Channel Layer reporting to C-Suite" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Resourced Entirely Through Disti / Master Agent" score="0.5" %}
+        {% include channel-growth-model/checkbox.html name="resource" value="Major Regional Resourcing" score="0.5" %}
     </div>
 
     <div class="buttons text-right">
