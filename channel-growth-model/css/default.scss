@@ -4,8 +4,8 @@
 $font-family: 'Montserrat', Arial, sans-serif;
 $colour-primary: #ffffff;
 $colour-bg-primary: #001048;
-$colour-error: #87165c;
-$colour-purple: #87165c;
+$colour-error: #9e005f;
+$colour-purple: #9e005f;
 $colour-red: #87165c;
 $colour-green: #1fa0a1;
 $colour-yellow: #fbca00;
@@ -269,6 +269,17 @@ body {
     display: none;
   }
 }
+
+.show-if-validated {
+  display: none;
+}
+
+.was-validated {
+  .show-if-validated {
+    display: block;
+  }
+}
+
 
 input[type=radio] {
   ~ .invalid-feedback {

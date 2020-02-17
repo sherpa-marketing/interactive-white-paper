@@ -21,9 +21,63 @@ classes:
         Your individual Channel Growth matrix is being produced now.
     </p>
 
-    <div class="buttons xtext-right">
-        <a class="button scrollsnap-next">See your results</a>
-    </div>
+    <form class="hide-if-submitted" id="form"
+          data-hs-guid="2db9793e-95fd-41c5-9d3a-3fdb6b4f7395"
+          data-hs-pid="733226"
+          data-forward-url-target="#results-url"
+          novalidate>
+        <div class="show-if-validated">
+            <div class="field">
+                <label for="name-input">forename</label>
+                <input type="text" id="name-input" name="firstname"  data-sync="true" autocomplete="firstname"
+                       placeholder="Please enter your forename" required/>
+                <span class="invalid-feedback">First name is required</span>
+            </div>
+            <div class="field">
+                <label for="lastname-input">surname</label>
+                <input type="text" id="lastname-input" name="lastname"  data-sync="true" autocomplete="lastname"
+                       placeholder="Please enter your surname" required/>
+                <span class="invalid-feedback">Last name is required</span>
+            </div>
+
+            <div class="field">
+                <label for="email-input">company</label>
+                <input type="text" id="company-input" name="company"  data-sync="true" autocomplete="company"
+                       placeholder="Please enter your company name" required/>
+                <span class="invalid-feedback">Company name is required</span>
+            </div>
+
+            <div class="field">
+                <label for="email-input">email</label>
+                <input type="email" id="email-input" name="email"  data-sync="true" autocomplete="email"
+                       placeholder="Please enter your email address" required/>
+                <span class="invalid-feedback">Please enter a valid email address</span>
+            </div>
+        </div>
+
+        <div class="d-none">
+            <input type="text" id="plan-score" name="plan_score" value="0"/>
+            <textarea id="plan-values" name="plan_values" ></textarea>
+            <input type="text" id="resource-score" name="resource_score" value="0" />
+            <textarea id="resource-values" name="resource_values" ></textarea>
+            <input type="text" id="recruit-score" name="recruit_score" value="0" />
+            <textarea id="recruit-values" name="recruit_values" ></textarea>
+            <input type="text" id="enable-score" name="enable_score" value="0" />
+            <textarea id="enable-values" name="enable_values" ></textarea>
+            <input type="text" id="engage-score" name="engage_score" value="0" />
+            <textarea id="engage-values" name="engage_values" ></textarea>
+            <input type="text" id="grow-score" name="grow_score" value="0" />
+            <textarea id="grow-values" name="grow_values" ></textarea>
+            <input type="text" id="measure-score" name="measure_score" value="0" />
+            <textarea id="measure-values" name="measure_values" ></textarea>
+            <input type="text" id="results-url" name="channel_growth_model_result_url" value="0"/>
+        </div>
+
+        <div class="buttons xtext-right">
+            <button type="submit" id="submit" class="button" data-hs-form="#form">See your results</button>
+        </div>
+
+    </form>
 </div>
 
 

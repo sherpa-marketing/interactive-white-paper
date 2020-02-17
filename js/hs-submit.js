@@ -20,6 +20,7 @@ $(function () {
                 }
             }
 
+            $('body').addClass('submitted');
             $.ajax({
                 type: 'POST',
                 url: "https://api.hsforms.com/submissions/v3/integration/submit/" + pid + "/" + guid,
@@ -27,11 +28,14 @@ $(function () {
                 contentType: 'application/json',
                 data: JSON.stringify(data),
                 success: function () {
-                    $('body').addClass('submitted');
+                    if ($form.data('forward-url-target')) {
+                        document.location.href = $($form.data('forward-url-target')).val();
+                    }
                     $form.removeClass('was-validated');
                 },
                 error: function () {
                     console.log("error");
+                    $('body').removeClass('submitted');
                 }
             });
         }
