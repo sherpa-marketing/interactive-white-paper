@@ -35,9 +35,15 @@ body {
   background: $colour-bg-primary;
 
   h1 {
+    margin-top: 0;
+
     text-transform: lowercase;
     &:after {
       content: '.';
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
     }
   }
 
@@ -345,6 +351,53 @@ input[type=radio] {
   }
 }
 
+.chart-outer {
+  padding: 4rem !important;
+  margin-top: 6rem !important;
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    margin-top: 2rem !important;
+  }
+}
+
+.chart-container {
+  position: relative;
+  max-width: 500px;
+}
+.legend {
+  position: absolute;
+}
+
+#leg-plan {
+  top: 5%;
+  left: 75%;
+}
+#leg-resource {
+  top: 40%;
+  left: 100%;
+}
+#leg-recruit {
+  bottom: 20%;
+  left: 91%;
+}
+#leg-enable {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#leg-engage {
+  bottom: 20%;
+  right: 91%;
+}
+#leg-grow {
+  top: 40%;
+  right: 100%;
+}
+#leg-measure {
+  top: 5%;
+  right: 75%;
+}
 
 
 
