@@ -12,14 +12,17 @@ $(function () {
         var $el = $(this);
         var name = $el.attr('name');
         var checked = $('[name=' + name + ']:checked');
-        var score = 0;
+        var score = 0.0;
         var values = [];
         checked.each(function() {
             score += parseFloat($(this).data('score'));
             values.push($(this).val());
         });
-        $('#' + name + "-score").val(score);
+
+        var percentScore = score / 9.15;
         $('#' + name + "-values").val(values.join(',\n'));
+        $('#' + name + "-score").val(percentScore);
+        $('#' + name + "-progress").css('width', percentScore + '%');
         generateKey();
     });
 

@@ -10,6 +10,8 @@ $colour-red: #87165c;
 $colour-green: #1fa0a1;
 $colour-yellow: #fbca00;
 $colour-blue: #0096cf;
+$colour-transparent-blue: rgba(206, 210, 245, 0.51);
+$colour-light-blue: #ced2f5;
 
 @import "whitepaper";
 
@@ -94,7 +96,7 @@ body {
         right: -200px;
         bottom: -200px;
         left: 95%;
-        background-image: linear-gradient(90deg, rgba(206, 210, 245, 0.51) 4.55%, rgba(0, 16, 72, 0) 4.55%, rgba(0, 16, 72, 0) 50%, rgba(206, 210, 245, 0.51) 50%, rgba(206, 210, 245, 0.51) 54.55%, rgba(0, 16, 72, 0) 54.55%, rgba(0, 16, 72, 0) 100%);
+        background-image: linear-gradient(90deg, $colour-transparent-blue 4.55%, rgba(0, 16, 72, 0) 4.55%, rgba(0, 16, 72, 0) 50%, $colour-transparent-blue 50%, $colour-transparent-blue 54.55%, rgba(0, 16, 72, 0) 54.55%, rgba(0, 16, 72, 0) 100%);
         background-size: 20px 100px;
         transform: rotate(-20deg);
         z-index: 0;
@@ -234,7 +236,7 @@ body {
   }
 
   label {
-    border: 1px solid rgba(206, 210, 245, 0.51);
+    border: 1px solid $colour-transparent-blue;
     padding: 0.25rem;
     display: table-cell;
     height: 5rem;
@@ -360,6 +362,55 @@ input[type=radio] {
     @media (min-width: map-get($grid-breakpoints, "lg")) {
       font-size: 5rem !important;
     }
+  }
+}
+
+.progress {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  font-size: .75rem;
+  border: 1px solid $colour-transparent-blue;
+
+  .progressbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: $colour-error;
+    transition: width .6s ease;
+  }
+
+  .progressindex {
+    color: $colour-light-blue;
+    width: 40%;
+    position: absolute;
+    border-right: 1px solid $colour-transparent-blue;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 

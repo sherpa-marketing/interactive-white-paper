@@ -21,10 +21,20 @@ try {
     var results = JSON.parse(atob(getUrlParameter('d')));
 
     var datasets = [];
-    datasets.push({
-        data: [results.m.plan.s, results.m.resource.s, results.m.recruit.s, results.m.enable.s, results.m.engage.s, results.m.grow.s, results.m.measure.s],
-        backgroundColor: ['#9e005f', '#9e005f','#9e005f', '#9e005f','#9e005f', '#9e005f','#9e005f']
-    });
+    for (var i = 5; i > 0; --i) {
+        datasets.push({
+            data: [10, 10, 10, 10, 10, 10, 10],
+            backgroundColor: [
+                color(i, results.m.plan),
+                color(i, results.m.resource),
+                color(i, results.m.recruit),
+                color(i, results.m.enable),
+                color(i, results.m.engage),
+                color(i, results.m.grow),
+                color(i, results.m.measure)
+            ]
+        });
+    }
 
     $(function() {
         var data = {
@@ -33,41 +43,21 @@ try {
         };
 
         var options = {
-            borderAlign: 'inner',
+            cutoutPercentage: 20,
             legend: {
                 display: false
             },
             tooltips: {
                 enabled: false
-            },
-            scale: {
-                ticks: {
-                    display: false,
-                    beginAtZero: true,
-                    min: 0,
-                    max: 100,
-                    stepSize: 20
-                },
-                angleLines: {
-                    display: true,
-                    color: '#ced2f5',
-                    lineWidth: 1
-                },
-                gridLines: {
-                    display: true,
-                    drawBorder: true,
-                    color: '#ced2f5'
-                }
             }
         };
 
         var chart = new Chart($('#chart'), {
-            type: 'polarArea',
+            type: 'doughnut',
             data: data,
             options: options
         });
     });
 } catch (e) {
-    //throw e;
     document.location.href = 'https://interactive.sherpamarketing.co.uk/channel-growth-model/';
 }
