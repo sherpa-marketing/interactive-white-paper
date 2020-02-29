@@ -1,0 +1,10 @@
+<div class="form-fields ui three column stackable grid">
+    {% for i in (1..9) %}
+    <div class="column">
+        <div class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox" id="{{include.pillar}}-{{i}}-input" name="{{include.pillar}}" value="N/A" data-score="0" data-index="0">
+            <label class="balance-text" id="{{include.pillar}}-{{i}}-label">N/A</label>
+        </div>
+    </div>
+    {% endfor %}
+</div>

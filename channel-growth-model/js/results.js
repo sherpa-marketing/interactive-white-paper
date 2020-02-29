@@ -17,8 +17,10 @@ function color(level, data) {
     return (parseFloat(data.s) + 0.5) < level ? '#001048' : '#9e005f';
 }
 
+var results;
+
 try {
-    var results = JSON.parse(atob(getUrlParameter('d')));
+    results = JSON.parse(atob(getUrlParameter('d')));
 
     var datasets = [];
     datasets.push({

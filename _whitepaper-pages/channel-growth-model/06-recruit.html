@@ -22,19 +22,8 @@ classes:
         Select all applicable.
     </p>
 
-    <div class="form-fields ui three column stackable grid">
-        {% include channel-growth-model/checkbox.html name="recruit" value="Target Partner Profiling" score="5" index="1" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Recruitment Campaigns & Programmes" score="50" index="2" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Partner Recruitment Targets" score="50" index="3" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Lorem ipsum dolor sit amet cons ectetuer" score="250" index="4" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Partner Qualification Requirements" score="50" index="5" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Partner-based Marketing (PBM)" score="250" index="6" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Lorem ipsum dolor sit amet cons ectetuer" score="5" index="7" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="Developed Partner Proposition & Recruitment Materials " score="5" index="8" %}
-        {% include channel-growth-model/checkbox.html name="recruit" value="GSI Growth Programmes" score="250" index="9" %}
-    </div>
-
-    {% include channel-growth-model/progress.html name="recruit" index="63%" %}
+    {% include channel-growth-model/checkboxes.html pillar="recruit"  %}
+    {% include channel-growth-model/progress.html pillar="recruit" %}
 
     <div class="buttons text-right px-3 px-md-0">
         <a class="button scrollsnap-next">Next</a>

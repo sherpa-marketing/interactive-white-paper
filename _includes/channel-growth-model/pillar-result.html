@@ -1,0 +1,15 @@
+<div class="row result-pillar">
+    <div class="eight wide column">
+        <h2>{{include.pillar}}.</h2>
+        <p class="result-desc">
+            {{include.description}}
+        </p>
+    </div>
+    <div class="eight wide column">
+        {% include channel-growth-model/progress.html %}
+        <div class="next-steps">
+            <b>Next Steps</b>
+            <ul class="next-steps" id="{{include.pillar}}-next-steps"></ul>
+        </div>
+    </div>
+</div>

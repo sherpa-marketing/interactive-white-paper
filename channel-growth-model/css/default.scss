@@ -36,6 +36,10 @@ body {
   overflow-x: hidden;
   background: $colour-bg-primary;
 
+  &.h-unset {
+    height: unset !important;
+  }
+
   h1 {
     margin-top: 0;
 
@@ -415,12 +419,16 @@ input[type=radio] {
 }
 
 .chart-outer {
-  padding: 4rem !important;
-  margin-top: 6rem !important;
+  padding: 2rem 3rem !important;
 
-  @media (min-width: map-get($grid-breakpoints, "md")) {
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
     margin-top: 2rem !important;
+    padding: 4rem !important;
   }
+
+  //@media (min-width: map-get($grid-breakpoints, "md")) {
+  //  margin-top: 2rem !important;
+  //}
 }
 
 .chart-container {
@@ -462,5 +470,42 @@ input[type=radio] {
   right: 75%;
 }
 
+.overall-score {
+  border: 1px solid $colour-light-blue;
+  border-bottom-width: 0;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: 700;
+  //background-color: $colour-light-blue;
+  //color: $colour-bg-primary;
 
+  span {
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid $colour-light-blue;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.result-pillar {
+  border-top: 1px solid $colour-light-blue;
+  padding: 3rem 0 !important;
+
+  .progress.mt-4 {
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .next-steps {
+    background-color: $colour-blue;
+    padding: 1rem;
+    ul {
+      list-style: square;
+      padding: 0.5rem 1rem;
+      margin: 0;
+    }
+  }
+}
 

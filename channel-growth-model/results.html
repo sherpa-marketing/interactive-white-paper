@@ -9,18 +9,33 @@ ga-code: "UA-48017467-3"
 <div class="stripes"></div>
 
 <div class="text-left constrained-container px-3 py-5">
-    <div class="sherpa-ident" style="position:absolute"><img src="https://cdn2.hubspot.net/hubfs/733226/ident_white.png" width="86" height="109" alt="Sherpa"></div>
-    <div class="chart-outer">
-        <div class="chart-container mx-auto p-4">
-            <span id="leg-plan" class="legend">plan</span>
-            <span id="leg-resource" class="legend">resource</span>
-            <span id="leg-recruit" class="legend">recruit</span>
-            <span id="leg-enable" class="legend">enable</span>
-            <span id="leg-engage" class="legend">engage</span>
-            <span id="leg-grow" class="legend">grow</span>
-            <span id="leg-measure" class="legend">measure</span>
-            <canvas id="chart" width="400" height="400"></canvas>
+    <div class="ui stackable grid">
+        <div class="four wide column">
+            <div class="sherpa-ident"><img src="https://cdn2.hubspot.net/hubfs/733226/ident_white.png" width="86" height="109" alt="Sherpa"></div>
+            <h1 class="text-white contrast-dark">Results</h1>
         </div>
+        <div class="twelve wide column">
+            <div class="chart-outer">
+                <div class="chart-container mx-auto p-4">
+                    <span id="leg-plan" class="legend">plan</span>
+                    <span id="leg-resource" class="legend">resource</span>
+                    <span id="leg-recruit" class="legend">recruit</span>
+                    <span id="leg-enable" class="legend">enable</span>
+                    <span id="leg-engage" class="legend">engage</span>
+                    <span id="leg-grow" class="legend">grow</span>
+                    <span id="leg-measure" class="legend">measure</span>
+                    <canvas id="chart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="overall-score">Overall Average Score <span>4.5</span></div>
+        {% include channel-growth-model/pillar-result.html pillar="plan" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com." %}
+        {% include channel-growth-model/pillar-result.html pillar="resource" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com."%}
+        {% include channel-growth-model/pillar-result.html pillar="recruit" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com."%}
+        {% include channel-growth-model/pillar-result.html pillar="enable" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com."%}
+        {% include channel-growth-model/pillar-result.html pillar="engage" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com." %}
+        {% include channel-growth-model/pillar-result.html pillar="grow" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com."%}
+        {% include channel-growth-model/pillar-result.html pillar="measure" description="Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea com."%}
     </div>
 </div>
 
