@@ -1,3 +1,4 @@
+var overallAverageScore = 0;
 Object.keys(modelData.pillars).forEach(function(key) {
     var pillarData = modelData.pillars[key];
     $('#' + key + '-average').css('width', pillarData.average + '%');
@@ -22,6 +23,9 @@ Object.keys(modelData.pillars).forEach(function(key) {
 
     if (typeof results !== "undefined") {
         $('#' + key + '-progress').css('width', results.m[key].s + '%');
+        console.log(results.m[key].s)
+        overallAverageScore += parseFloat(results.m[key].s);
     }
 });
-
+console.log(overallAverageScore);
+$('#overall-score').text((overallAverageScore / 7 / 20).toFixed(1));
