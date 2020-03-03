@@ -19,11 +19,16 @@ Object.keys(modelData.pillars).forEach(function(key) {
                 nextStepCount++;
             }
         }
+
+        if (typeof results !== "undefined") {
+            if (nextStepCount === 0) {
+                nextSteps.append($('<li>You are doing all the right things. Keep refining and optimising for continued Channel success.</li>'));
+            }
+        }
     }
 
     if (typeof results !== "undefined") {
         $('#' + key + '-progress').css('width', results.m[key].s + '%');
-        console.log(results.m[key].s)
         overallAverageScore += parseFloat(results.m[key].s);
     }
 });
