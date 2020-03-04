@@ -348,6 +348,17 @@ input[type=radio] {
   }
 }
 
+.result-page .carousel-cell {
+  background-color: $colour-bg-primary;
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    background: url('../img/cover-bg.jpg') $colour-bg-primary no-repeat !important;
+    background-size: 150vh auto !important;
+    background-position: top left !important;
+    background-attachment: fixed !important;
+  }
+}
+
 .page-01-cover {
   background: url('../img/cover-bg.jpg') no-repeat !important;
   background-color: $colour-bg-primary;

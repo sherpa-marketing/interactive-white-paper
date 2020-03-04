@@ -88,7 +88,7 @@ var modelData = {
                 {index: 5, position: 5, score: 50, label: 'Partner Demand Center: centralised DemandGen with Partner lead distribution'},
                 {index: 6, position: 8, score: 50, label: 'Partner incentives strategy'},
                 {index: 7, position: 3, score: 250, label: 'Channel account-based marketing programmes'},
-                {index: 8, position: 6, score: 250, label: 'Tiered support based on level Of value-add'},
+                {index: 8, position: 6, score: 250, label: 'Tiered support based on level of value-add'},
                 {index: 9, position: 9, score: 250, label: 'Established Vendor hosted marketplace for complimentary solutions'}
             ]
         },
