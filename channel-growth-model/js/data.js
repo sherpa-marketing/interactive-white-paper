@@ -23,7 +23,7 @@ var modelData = {
                 {index: 1, position: 1, score: 5, label: 'No dedicated Channel heads'},
                 {index: 2, position: 8, score: 5, label: 'Resourced entirely through Disti / Master Agent'},
                 {index: 3, position: 4, score: 5, label: 'Limited or no budget for investment'},
-                {index: 4, position: 2, score: 50, label: 'Specialist agency support specifically for Channel Operations'},
+                {index: 4, position: 2, score: 50, label: 'Specialist Channel agency support'},
                 {index: 5, position: 9, score: 50, label: 'Major regional resourcing'},
                 {index: 6, position: 3, score: 50, label: '2-tier or 3-tier Channel model'},
                 {index: 7, position: 5, score: 250, label: 'Specialist agency support with embedded personnel'},
