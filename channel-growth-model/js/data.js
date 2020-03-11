@@ -4,11 +4,11 @@ var modelData = {
             average: 24,
             resources: [
                 {index: 1, position: 1, score: 5, label: 'Defined Partner programme'},
-                {index: 2, position: 6, score: 5, label: 'Specific Channel revenue goals'},
+                {index: 2, position: 6, score: 5, label: 'Channel revenue goals'},
                 {index: 3, position: 9, score: 5, label: 'Partner growth plans where necessary'},
                 {index: 4, position: 4, score: 50, label: 'Multi-tiered Partner programme'},
                 {index: 5, position: 3, score: 50, label: 'Annualised Partner business plan'},
-                {index: 6, position: 8, score: 50, label: 'Specific channel revenue goals and budget allocation'},
+                {index: 6, position: 8, score: 50, label: 'Detailed channel revenue goals and budget allocation'},
                 {index: 8, position: 5, score: 250, label: 'Commissioned research into market opportunities'},
                 {index: 7, position: 2, score: 250, label: 'Cross-business Channel alignment'},
                 {index: 9, position: 7, score: 250, label: 'Analysis of the competency / coverage of your Partner network'},
