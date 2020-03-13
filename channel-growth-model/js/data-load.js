@@ -1,4 +1,4 @@
-var overallAverageScore = 0;
+// var overallAverageScore = 0;
 Object.keys(modelData.pillars).forEach(function(key) {
     var pillarData = modelData.pillars[key];
     $('#' + key + '-average').css('width', pillarData.average + '%');
@@ -13,21 +13,21 @@ Object.keys(modelData.pillars).forEach(function(key) {
         input.attr('value', resource.label);
         label.text(resource.label);
 
-        if (typeof results !== "undefined") {
-            if (nextStepCount < 3 && ((1 << (resource.index - 1)) & results.m[key].i) === 0) {
-                nextSteps.append($('<li>' + resource.label + '</li>'));
-                nextStepCount++;
-            }
-        }
+        // if (typeof results !== "undefined") {
+        //     if (nextStepCount < 3 && ((1 << (resource.index - 1)) & results.m[key].i) === 0) {
+        //         nextSteps.append($('<li>' + resource.label + '</li>'));
+        //         nextStepCount++;
+        //     }
+        // }
     }
 
-    if (typeof results !== "undefined") {
-        $('#' + key + '-progress').css('width', results.m[key].s + '%');
-        overallAverageScore += parseFloat(results.m[key].s);
-        if (nextStepCount === 0) {
-            nextSteps.append($('<li>You are doing all the right things. Keep refining and optimising for continued Channel success.</li>'));
-        }
-    }
+    // if (typeof results !== "undefined") {
+    //     $('#' + key + '-progress').css('width', results.m[key].s + '%');
+    //     overallAverageScore += parseFloat(results.m[key].s);
+    //     if (nextStepCount === 0) {
+    //         nextSteps.append($('<li>You are doing all the right things. Keep refining and optimising for continued Channel success.</li>'));
+    //     }
+    // }
 });
 
-$('#overall-score').text((overallAverageScore / 7 / 20).toFixed(1));
+// $('#overall-score').text((overallAverageScore / 7 / 20).toFixed(1));

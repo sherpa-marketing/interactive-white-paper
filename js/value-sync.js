@@ -36,6 +36,27 @@ $(function () {
         generateKey();
     });
 
+    $('#submit').click(function(e) {
+        e.preventDefault();
+        console.log("hid there");
+
+        $.ajax({
+            type: 'POST',
+            url: "https://api.sherpamarketing.co.uk/jsa/store",
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify(generateData()),
+            success: function (data) {
+                console.log(data);
+                setResultUrl("k=" + data.body);
+                $('#form').submit();
+            },
+            error: function () {
+                // show an error message
+            }
+        });
+    });
+
     function index(dimension) {
         var checked = $('[name=' + dimension + ']:checked');
         var index = 0;
@@ -45,8 +66,8 @@ $(function () {
         return index;
     }
 
-    function generateKey() {
-        var data = {
+    function generateData() {
+        return data = {
             f: $('#name-input').val(),
             s: $('#lastname-input').val(),
             c: $('#company-input').val(),
@@ -81,12 +102,21 @@ $(function () {
                 }
             }
         };
+    }
 
+    function generateKey() {
+        var data = generateData();
         var val = JSON.stringify(data);
         var b64 = btoa(val);
+        setResultUrl("d=" + b64);
+    }
+
+    function setResultUrl(params) {
         var resultsUrl = document.location.protocol + "//"
             + document.location.host
-            + "/channel-growth-model/results?d=" + b64;
+            + "/channel-growth-model/results?"
+            + params;
         $('#results-url').val(resultsUrl);
     }
+
 });

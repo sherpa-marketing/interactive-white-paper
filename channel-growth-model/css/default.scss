@@ -520,3 +520,12 @@ input[type=radio] {
   }
 }
 
+@media print {
+  div#hubspot-messages-iframe-container {
+    display: none !important;
+  }
+
+  #hubspot-messages-iframe-container {
+    display: none !important;
+  }
+}
