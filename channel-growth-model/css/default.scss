@@ -31,6 +31,12 @@ body {
   }
 }
 
+.ui .widget {
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.5);
+  -moz-box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.5);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.5);
+}
+
 .carousel-cell {
   padding: 0 !important;
   overflow-x: hidden;
