@@ -74,6 +74,17 @@ body {
     text-decoration: none;
     text-transform: lowercase;
 
+    &.button-secondary {
+      background: $colour-green;
+      text-transform: none;
+      padding: 0.74em 1.74em;
+      text-align: center;
+
+      &:after {
+        content: '';
+      }
+    }
+
     &:after {
       content: '.';
     }
