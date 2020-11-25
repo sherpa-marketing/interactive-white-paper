@@ -29,4 +29,8 @@
   .d-print-table-cell   { display: table-cell !important; }
   .d-print-flex         { display: flex !important; }
   .d-print-inline-flex  { display: inline-flex !important; }
+
+  .print-break-avoid { break-inside: avoid }
+  .print-break-before { page-break-before: always }
+  .print-break-after { page-break-before: always }
 }

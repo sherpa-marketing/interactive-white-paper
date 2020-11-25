@@ -16,11 +16,13 @@ $colour-light-blue: #ced2f5;
 @import "whitepaper";
 
 body {
+
   //font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: -0.025em;
   color: $colour-primary;
+  background: $colour-bg-primary;
 
   @media (min-width: map-get($grid-breakpoints, "md")) {
     font-size: 1.0vw;
@@ -500,7 +502,7 @@ input[type=radio] {
 
 .overall-score {
   border: 1px solid $colour-light-blue;
-  border-bottom-width: 0;
+  #border-bottom-width: 0;
   font-size: 1.5rem;
   padding: 0 1rem;
   line-height: 3rem;
@@ -518,7 +520,7 @@ input[type=radio] {
 }
 
 .result-pillar {
-  border-top: 1px solid $colour-light-blue;
+  border-bottom: 1px solid $colour-light-blue;
   padding: 2rem 0 !important;
 
   .progress.mt-4 {
